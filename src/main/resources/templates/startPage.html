@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="de" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" th:href="@{/css/styles.css}"/>
+    <link rel="stylesheet" type="text/css" th:href="@{/css/modal.css}"/>
+
+    <title>Willkommen zu meiner Studie</title>
+</head>
+<body>
+<h1>Herzlich Willkommen</h1>
+<p>Welcome to <span th:text="${appName}">Our App</span></p>
+<br>
+<p>Vielen Dank, dass du bei der Studie meiner Masterarbeit mithelfen möchtest.</p>
+<p>Deine Aufgabe in dieser Studie ist es, eine Webseite auszuprobieren, d.h. die Inhalte zu lesen und anzuschauen. Anschließend stelle ich dir ein paar einfache Fragen zu der Webseite.</p>
+<p>Die Studie wird etwa 10 Minuten dauern.</p>
+
+<p>Bitte nutze einen Laptop, PC oder Tablet für die Studie. Smartphones werden nicht unterstützt.</p>
+<hr>
+<p>Wenn du starten möchtest, lese bitte die Datenschutzbestimmungen und klicke dann auf den folgenden Button.</p>
+
+<div id="myModal" class="modal">
+    <div class="modal-content">
+        <div class="modal-header">
+            <span class="close">&times;</span>
+            <h2>Datenschutzrechtliche Aufklärung und Einwilligung</h2>
+        </div>
+        <div class="modal-body">
+            <h3>1	Ausführliche Beschreibung des Forschungsvorhabens</h3>
+            <p>
+                Das Forschungsvorhaben der Masterarbeit von Oliver Wolf konzentriert sich auf das Phänomen Scrollytelling und dessen Auswirkungen auf die User Experience (UX) auf Webseiten. Scrollytelling, eine erzählerische Technik, die durch das Scrollen durch Inhalte auf einer Webseite gekennzeichnet ist, hat in den letzten Jahren deutlich an Beliebtheit gewonnen. Trotz dieses wachsenden Interesses besteht in der wissenschaftlichen Literatur noch eine Lücke hinsichtlich umfassender Studien, die sich mit den Auswirkungen dieser Technik auf die Benutzererfahrung auseinandersetzen.
+                Das zentrale Anliegen dieser Masterarbeit ist es, zu erkunden, wie Scrollytelling das Nutzererlebnis beeinflusst und ob es Vorteile gegenüber traditionellen Webdesign-Ansätzen bietet. Um dieses Ziel zu erreichen, sollen zwei Hauptforschungsfragen beantwortet werden: Erstens, wie Nutzer eine Webseite wahrnehmen, die das Scrollytelling-Format verwendet, und wie diese Technik ihr Gesamterlebnis beeinflusst. Zweitens, ob Webseiten, die Scrollytelling nutzen, tatsächlich eine überlegene User Experience im Vergleich zu traditionell gestalteten Webseiten bieten.
+                Um tiefgreifende und umfassende Antworten auf diese Fragen zu erhalten, wird eine kombinierte Methode aus qualitativen und quantitativen Ansätzen verwendet. Der qualitative Ansatz besteht aus Interviews mit Nutzern, die eine Scrollytelling-Webseite besuchen. Hierbei sollen sie spezifische Aufgaben erfüllen und währenddessen ihre Gedanken, Empfindungen und Eindrücke teilen. Basierend auf den Erkenntnissen dieser Interviews wird dann ein quantitativer Ansatz verfolgt, bei dem Prototypen von Webseiten erstellt werden: Eine traditionelle und eine, die Scrollytelling nutzt. Ein A/B-Test wird durchgeführt, um die Wirksamkeit dieser beiden Webdesign-Ansätze in Bezug auf die User Experience zu bewerten.
+            </p>
+            <h3>2	Inhalt und Zweck der Studie</h3>
+            <p>
+                Der Hauptzweck dieser Studie besteht darin, die Auswirkungen von Scrollytelling auf die User Experience von Webseiten zu analysieren und zu verstehen. Das Forschungsvorhaben beabsichtigt, tiefere Einblicke in die Wahrnehmung und Interaktion der Nutzer mit Webseiten zu gewinnen, die Scrollytelling-Techniken verwenden. Speziell werden folgende Aspekte betrachtet:
+            </p>
+            <ul>
+                <li>Forschungsfrage 1: Wahrnehmung von Scrollytelling – Untersuchung, wie Nutzer Webseiten wahrnehmen, die Scrollytelling-Techniken verwenden. Dies umfasst sowohl die Gesamteindrücke der Nutzer von solchen Webseiten als auch spezifische Reaktionen auf Scrollytelling-Elemente.</li>
+                <li>Forschungsfrage 2: Vergleich mit traditionellem Webdesign – Bestimmung, ob Scrollytelling eine verbesserte User Experience bietet im Vergleich zu traditionell gestalteten Webseiten. Dies wird durch direkte Vergleiche von Nutzerreaktionen auf Prototyp-Webseiten bewertet, die entweder Scrollytelling oder traditionelle Webdesign-Techniken verwenden.</li>
+            </ul>
+            <p>
+                Die erhobenen Daten in dieser Studie werden ausschließlich zum Zweck des oben genannten Forschungsvorhabens verwendet. Eine Umwidmung oder Verwendung der Daten für andere Forschungsbereiche oder -projekte ist nicht vorgesehen.
+                Sollte es in der Zukunft notwendig sein, die gesammelten Daten für einen anderen Zweck als den ursprünglich beabsichtigten zu verwenden, werden die betroffenen Teilnehmer vor der Weiterverarbeitung über diesen weiteren Zweck informiert.
+            </p>
+            <h3>3	Betroffener Personenkreis</h3>
+            <p>
+                Die für diese Studie beabsichtigten Teilnehmer sind Personen aus der allgemeinen Bevölkerung ohne spezifische Einschränkungen hinsichtlich Alter, Geschlecht, Bildungsniveau oder geografischer Lage. Es ist jedoch zu beachten, dass Personen unter 18 Jahren von der Teilnahme ausgeschlossen sind und es keine Teilnehmer geben wird, die als nicht einwilligungsfähig gelten. Das Forschungsvorhaben konzentriert sich ausschließlich auf die individuellen Erfahrungen und Eindrücke der Teilnehmer in Bezug auf Scrollytelling und Webseiten-UX. Es werden keine Informationen oder Daten über Familie, Freunde oder Arbeitskollegen der Teilnehmer gesammelt oder in die Studie einbezogen.
+            </p>
+            <h3>4	Zu erhebende Daten</h3>
+            <p>
+                Im Rahmen der qualitativen sowie der quantitativen Untersuchung zur Nutzererfahrung von Webseiten, die Scrollytelling verwenden, werden die folgenden personenbezogenen Daten der Teilnehmer erhoben:
+            </p>
+            <ul>
+                <li>
+                    Alter: Um Einblicke in die Altersgruppen der Studienteilnehmer zu gewinnen und m√∂gliche Unterschiede in der Benutzererfahrung basierend auf dem Alter zu analysieren.
+                </li>
+                <li>
+                    Geschlecht: Dies dient dazu, die Diversität der Studienteilnehmer sicherzustellen und eventuelle geschlechtsspezifische Unterschiede in der Wahrnehmung und Interaktion mit Scrollytelling-Webseiten zu untersuchen.
+                </li>
+                <li>
+                    Bildungsstand: Ermöglicht eine Analyse, wie der Bildungsgrad die Nutzererfahrung beeinflusst. Zum Beispiel könnten Personen mit einem höheren Bildungsgrad anders auf komplexe Inhalte reagieren als solche mit einem niedrigeren Bildungsgrad.
+                </li>
+                <li>
+                    Fachrichtung: Diese Information kann helfen zu verstehen, ob die berufliche oder akademische Ausrichtung der Teilnehmer ihre Sichtweise oder Interaktion mit Scrollytelling-Webseiten beeinflusst.
+                </li>
+            </ul>
+            <p>
+                Die erhobenen Daten werden ausschließlich zu Forschungszwecken im Kontext dieser Masterarbeit verwendet. Alle persönlichen Daten der Teilnehmer werden vertraulich behandelt und nicht an Dritte weitergegeben. Es werden geeignete Maßnahmen ergriffen, um die Anonymität der Teilnehmer während der gesamten Studie und darüber hinaus zu gewährleisten.
+            </p>
+            <h3>5	Analyseergebnisse der Daten</h3>
+            <p>
+                Im Rahmen dieses Forschungsvorhabens zur Untersuchung der Auswirkungen von Scrollytelling auf die User Experience von Webseiten werden verschiedene Daten analysiert. Die Analysen konzentrieren sich auf die Wahrnehmung und Interaktion der Nutzer mit Webseiten, die Scrollytelling-Techniken verwenden, im Vergleich zu traditionellen Webdesign-Ansätzen. Diese Analysen ermöglichen es, tiefe Einblicke in das Nutzererlebnis und die Vorzüge oder möglichen Nachteile von Scrollytelling zu gewinnen.
+                Es ist wichtig zu betonen, dass, obwohl persönliche Meinungen und Eindrücke der Teilnehmer während der qualitativen Interviews erfasst werden, die daraus resultierenden Analysen keine schützenswerten Daten oder Informationen über die Identität der Teilnehmer enthüllen werden. Alle gewonnenen Erkenntnisse werden so behandelt und präsentiert, dass eine Rückverfolgung zu einzelnen Teilnehmern nicht möglich ist. Das Hauptziel ist es, generelle Muster und Trends in der User Experience zu identifizieren und nicht, individuelle Nutzerprofile zu erstellen.
+            </p>
+            <h3>6	Lagerung und Weitergabe von Daten</h3>
+            <p>
+                Die während der Studie erhobenen Daten werden ausschließlich auf dem persönlichen Rechner des Forschenden gespeichert. Es wird darauf geachtet, dass diese Daten sicher aufbewahrt werden und keinen unautorisierten Zugriffen ausgesetzt sind.
+                Die Auswertung dieser Daten erfolgt mithilfe von lokalen Programmen, die auf demselben Rechner installiert sind. Es wird keine Cloud-basierte oder externe Software verwendet, die Daten außerhalb des Rechners speichern oder verarbeiten könnte.
+                Darüber hinaus wird betont, dass keine Daten an Dritte weitergegeben werden. Die Daten sind ausschließlich für Forschungszwecke dieser spezifischen Masterarbeit vorgesehen und werden zu keinem Zeitpunkt an externe Parteien verkauft, geteilt oder offengelegt.
+            </p>
+            <h3>7	Beteiligte, Datenflüsse und speichernde Stellen</h3>
+            <p>
+                Die Studie zur Untersuchung der Auswirkungen von Scrollytelling auf die User Experience von Webseiten wird vom Forschenden durchgeführt und dabei von zwei betreuenden Professoren der Technischen Hochschule Würzburg-Schweinfurt begleitet. Die Aufgabenverteilung und die Beteiligung an den Datenflüssen sind wie folgt:
+            </p>
+            <ul>
+                <li>
+                    <span>Oliver Wolf (Keesburgstr. 9D, 97074 Würzburg):</span>
+                    <ul>
+                        <li>Aufgaben: Initiierung, Planung, Durchführung und Analyse der Studie, Sammlung und Auswertung der Daten.</li>
+                        <li>Zugriff auf Daten: Hat vollen Zugriff auf alle erhobenen Daten, sowohl während als auch nach Abschluss der Studie.</li>
+                        <li>Speicherung: Die Daten werden auf einem geschützten Computer des Forschenden gespeichert.</li>
+                    </ul>
+                </li>
+                <li>
+                    <span>Prof. Dr. Tobias Aubele (Technische Hochschule Würzburg-Schweinfurt, Fakultät Informatik und Wirtschaftsinformatik, Sanderheinrichsleitenweg 20, 97074 Würzburg):</span>
+                    <ul>
+                        <li>Aufgaben: Erstkorrektur der Masterarbeit, Beratung und Unterstützung des Forschenden bei der Durchführung und Auswertung der Studie.</li>
+                        <li>Zugriff auf Daten: Erhält Zugang zu den Daten ausschließlich zu Korrektur- und Beratungszwecken.</li>
+                        <li>Speicherung: Keine dauerhafte Speicherung der Daten.</li>
+                    </ul>
+                </li>
+                <li>
+                    <span>Prof. Dr. Rolf Schillinger (Technische Hochschule Würzburg-Schweinfurt, Fakultät Informatik und Wirtschaftsinformatik, Sanderheinrichsleitenweg 20, 97074 Würzburg):</span>
+                    <ul>
+                        <li>Aufgaben: Zweitkorrektur der Masterarbeit, ggf. kritische Prüfung und Feedback zu den Ergebnissen.</li>
+                        <li>Zugriff auf Daten: Erhält Zugang zu den Daten ausschließlich zu Korrektur- und Bewertungszwecken.</li>
+                        <li>Speicherung: Keine dauerhafte Speicherung der Daten.</li>
+                    </ul>
+                </li>
+            </ul>
+            <p>
+                Die gesammelten Daten werden streng vertraulich behandelt. Es erfolgt keine Weitergabe der Daten an externe Stellen oder Dritte außerhalb der oben genannten Personen. Die Verantwortung für die Einhaltung des Datenschutzes liegt beim Forschenden, unterstützt von den betreuenden Professoren der Technischen Hochschule Würzburg-Schweinfurt.
+            </p>
+            <h3>8	Konkrete Dauer der Speicherung</h3>
+            <p>
+                Die erhobenen personenbezogenen Daten werden für die Dauer von 12 Monaten nach Abschluss der Studie gespeichert. Nach Ablauf dieser Frist werden die Daten entweder gelöscht, gesperrt oder anonymisiert. Daten, die an Dritte weitergegeben wurden, unterliegen den Speicherungsrichtlinien dieser Dritten. Rechtliche Grundlagen für die Speicherungsdauer können z.B. universitäre Vorgaben oder datenschutzrechtliche Bestimmungen sein.
+            </p>
+            <h3>9	Pseudonymisierungsverfahren</h3>
+            <p>
+                Die Pseudonymisierung der Daten erfolgt am Rechner des Forschenden. Im Zuge des Gesamtablaufs werden personenbezogene Daten durch eindeutige Identifikationsnummern ersetzt, um die Identifizierung der betroffenen Personen zu verhindern. Um den Beschlagnahmeschutz zu gewährleisten, werden die Zuordnungen zwischen Pseudonym und Probandendaten gesondert und sicher gespeichert.
+            </p>
+            <h3>10	Rechtsgrundlagen</h3>
+            <p>
+                Die Rechtsgrundlage zur Verarbeitung der genannten personenbezogenen Daten bildet die Einwilligung gemäß Art. 6 (1) Buchstabe a EU-DSGVO im zweiten Teil dieses Dokumentes.
+            </p>
+            <h3>11	Widerruf seitens des Betroffenen</h3>
+            <p>
+                Sie haben das Recht jederzeit die datenschutzrechtliche Einwilligung zu widerrufen. Durch den Widerruf der Einwilligung wird die Rechtmäßigkeit der aufgrund der Einwilligung bis zum Widerruf erfolgten Verarbeitung nicht berührt. Richten Sie den Widerruf an den Verantwortlichen. Ihnen entstehen durch den Widerruf keine Nachteile. Bei einem Widerruf endet Ihre Teilnahme an der Studie. Nach Eingang des Widerrufs werden die personenbezogenen Daten gelöscht.
+            </p>
+            <h3>12	Namen, Kontaktdaten des Verantwortlichen & Datenschutzbeauftragten</h3>
+            <p>
+                Die Verantwortung für die Verarbeitung der personenbezogenen Daten hat:
+            </p>
+            <ul>
+                <li>Name: Oliver Wolf</li>
+                <li>Institut: Technische Hochschule Würzburg-Schweinfurt</li>
+                <li>E-Mail: oliver.wolf@study.thws.de</li>
+                <li>Anschrift: Keesburgstraße 9D, 97074 Würzburg</li>
+            </ul>
+            <h3>13	Hinweis auf Rechte der Betroffenen</h3>
+            <p>
+                Gemäß Art. 13 II b der Datenschutzgrundverordnung haben Sie das Recht auf Auskunft (Art 15 DSGVO und §34 BDSG), Widerspruch (Art. 21 DSGVO und §36 BDSG), Datenübertragbarkeit (Art 20 DSGVO), Löschung (Art 17 DSGVO und §35 BDSG) und Einschränkung der Verarbeitung (Art 18 DSGVO), Berichtigung (Art 16 DSGVO).
+                Möchten Sie eins dieser Rechte in Anspruch nehmen, wenden Sie sich bitte an den Datenschutzbeauftragten Oliver Wolf.
+            </p>
+        </div>
+    </div>
+</div>
+
+
+<form id="acceptDataUsage" action="#" th:action="${person}" method="get">
+    <input type="checkbox" id="acceptCheckbox" required>
+    <label for="acceptCheckbox">Ich habe die <a id="myBtn">Datenschutzbestimmungen</a> gelesen und akzeptiere sie.</label>
+    <br>
+    <input type="submit" value="Studie starten">
+</form>
+
+
+<script>
+    // Get the modal
+    var modal = document.getElementById("myModal");
+
+    // Get the button that opens the modal
+    var btn = document.getElementById("myBtn");
+
+    // Get the <span> element that closes the modal
+    var span = document.getElementsByClassName("close")[0];
+
+    // When the user clicks on the button, open the modal
+    btn.onclick = function() {
+        modal.style.display = "block";
+    }
+
+    // When the user clicks on <span> (x), close the modal
+    span.onclick = function() {
+        modal.style.display = "none";
+    }
+
+    // When the user clicks anywhere outside of the modal, close it
+    window.onclick = function(event) {
+        if (event.target == modal) {
+            modal.style.display = "none";
+        }
+    }
+</script>
+</body>
+</html>

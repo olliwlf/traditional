@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="de" xmlns:th="http://www.thymeleaf.org">
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" type="text/css" th:href="@{/css/styles.css}"/>
+  <link rel="stylesheet" type="text/css" th:href="@{/css/modal.css}"/>
+
+  <title>Test Seite</title>
+</head>
+<body>
+
+<form id="nextPage" th:action="${/survey}" method="get">
+  <input form="nextPage" id="submitButton" type="submit" value="Weiter zur Umfrage">
+</form>
+</body>
+</html>

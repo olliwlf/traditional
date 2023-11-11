@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="de" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" th:href="@{/css/styles.css}"/>
+    <link rel="stylesheet" type="text/css" th:href="@{/css/modal.css}"/>
+
+    <title>Deine Daten</title>
+</head>
+<body>
+<h2>Für die Studie benötige ich noch ein paar Angaben von dir!</h2>
+<br>
+<form id="personalInformation" th:action="${/testPage}" method="get">
+    <label for="age">Dein Alter: </label>
+    <input form="personalInformation" type="number" id="age" placeholder="Bitte gib an, wie alt du bist.">
+
+    <br>
+
+    <label for="education">Deine Ausbildung: </label>
+    <input form="personalInformation" type="text" id="education" >
+
+    <h4>Deine Aufgabe:</h4>
+    <p>Mit dem Klick auf den folgenden Button wirst du zur Webseite weitergeleitet.
+        Scrolle diese bitte von oben nach unten durch und schaue dir die Inhalte gut an.
+        Am Ende der Seite findest du einen Button, der dich zum Fragebogen dieser Studie führt.</p>
+
+    <input form="personalInformation" type="submit" value="Weiter zur Webseite">
+</form>
+</body>
+</html>
