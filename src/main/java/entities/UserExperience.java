@@ -20,7 +20,7 @@ public class UserExperience {
     @GeneratedValue(strategy= GenerationType.AUTO)
     private Long id;
 
-    private Integer testGroup; // 0 traditional, 1 scrollytelling
+    private Integer testGroup = 0; // 0 traditional, 1 scrollytelling
 
     private Integer value1;
     private Integer value2;

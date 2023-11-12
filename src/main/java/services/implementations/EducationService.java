@@ -7,6 +7,8 @@ import org.springframework.stereotype.Service;
 import repositories.IEducationRepository;
 import services.IEducationService;
 
+import java.util.List;
+
 @Service
 public class EducationService implements IEducationService {
     @Autowired
@@ -19,4 +21,7 @@ public class EducationService implements IEducationService {
 
     @Override
     public Education getById(Long educationId) { return educationRepository.getOne(educationId); }
+
+    @Override
+    public List<Education> getAll() { return educationRepository.findAll(); }
 }

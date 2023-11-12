@@ -11,22 +11,25 @@
     <title>Deine Daten</title>
 </head>
 <body>
-<div class="container-fluid">
-    <h2>Für die Studie benötige ich noch ein paar Angaben von dir!</h2>
-    <br>
+<div class="container-fluid" style="text-align: center;">
+    <h2>Infos zu deiner Person</h2>
+    <p>Für die Auswertung der Studie benötige ich noch ein paar Angaben von dir:</p>
     <form id="personalInformation" th:action="@{/testPage}" method="get">
         <label for="age">Dein Alter: </label>
         <input form="personalInformation" type="number" id="age" placeholder="Bitte gib an, wie alt du bist.">
-
         <br>
-
-        <label for="education">Deine Ausbildung: </label>
+        <label for="education">Deinen Ausbildungsstand: </label>
         <input form="personalInformation" type="text" id="education" >
+        <br>
+        <label for="educationDirection">Deine Ausbildungsrichtung: </label>
+        <input form="personalInformation" type="text" id="educationDirection" >
+
+        <hr>
 
         <h4>Deine Aufgabe:</h4>
         <p>Mit dem Klick auf den folgenden Button wirst du zur Webseite weitergeleitet.
-            Scrolle diese bitte von oben nach unten durch und schaue dir die Inhalte gut an.
-            Am Ende der Seite findest du einen Button, der dich zum Fragebogen dieser Studie führt.</p>
+            <br>Scrolle diese bitte von oben nach unten durch und schaue dir die Inhalte gut an.
+            <br>Am Ende der Seite findest du einen Button, der dich zum Fragebogen dieser Studie führt.</p>
 
         <input form="personalInformation" class="btn btn-primary" type="submit" value="Weiter zur Webseite">
     </form>

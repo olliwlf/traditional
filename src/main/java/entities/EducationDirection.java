@@ -11,14 +11,10 @@ import javax.persistence.Id;
 @Entity
 @Getter
 @Setter
-public class Person {
+public class EducationDirection {
     @Id
     @GeneratedValue(strategy= GenerationType.AUTO)
     private Long id;
 
-    private Integer age;
-
-    private Education education;
-
-    private EducationDirection educationDirection;
+    private String title;
 }

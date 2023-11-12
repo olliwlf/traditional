@@ -5,44 +5,22 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="faa9dc7f-cc2e-43ef-b4a8-3f0de8c95e37" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/entities/EducationDirection.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/repositories/IEducationDirectionRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/services/IEducationDirectionService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/services/implementations/EducationDirectionService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/example/springboot/HelloController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/springboot/HelloController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/entities/Person.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/entities/Person.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/entities/UserExperience.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/entities/UserExperience.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/repositories/IEducationRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/repositories/IEducationRepository.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/services/IEducationService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/services/IEducationService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/services/IPersonService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/services/IPersonService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/services/IUserExperienceService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/services/IUserExperienceService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/services/implementations/EducationService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/services/implementations/EducationService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/services/implementations/PersonService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/services/implementations/PersonService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/services/implementations/UserExperienceService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/services/implementations/UserExperienceService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/css/styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/css/styles.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/templates/personalInfos.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/personalInfos.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/templates/startPage.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/startPage.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/survey.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/survey.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/templates/testPage.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/testPage.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/example/springboot/HelloController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/springboot/HelloController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/entities/UserExperience.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/entities/UserExperience.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/repositories/IEducationRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/repositories/IEducationRepository.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/services/IEducationService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/services/IEducationService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/services/IPersonService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/services/IPersonService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/services/IUserExperienceService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/services/IUserExperienceService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/services/implementations/EducationService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/services/implementations/EducationService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/services/implementations/PersonService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/services/implementations/PersonService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/services/implementations/UserExperienceService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/services/implementations/UserExperienceService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/templates/personalInfos.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/personalInfos.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/templates/startPage.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/startPage.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/templates/survey.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/survey.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/templates/testPage.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/testPage.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/application.properties" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -70,6 +48,8 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="HTML File" />
+        <option value="Class" />
+        <option value="Interface" />
       </list>
     </option>
   </component>
@@ -84,23 +64,28 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "DefaultHtmlFileTemplate": "HTML File",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "android.gradle.sync.needed": "true",
-    "git-widget-placeholder": "main",
-    "last_opened_file_path": "/Users/oliverwolf/Documents/FHWS_MIS/Masterarbeit/Prototypen/Traditional",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;android.gradle.sync.needed&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/Users/oliverwolf/Documents/FHWS_MIS/Masterarbeit/Prototypen/Traditional&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/main/resources/static.images" />
+    </key>
+  </component>
   <component name="RunManager" selected="Maven.spring-boot-initial [spring-boot:run]">
     <configuration name="spring-boot-initial [spring-boot:run]" type="MavenRunConfiguration" factoryName="Maven" nameIsGenerated="true">
       <MavenSettings>
@@ -152,7 +137,8 @@
       <option name="presentableId" value="Default" />
       <updated>1699642333108</updated>
       <workItem from="1699642334127" duration="1829000" />
-      <workItem from="1699747140107" duration="6747000" />
+      <workItem from="1699747140107" duration="7345000" />
+      <workItem from="1699792881631" duration="9670000" />
     </task>
     <servers />
   </component>
@@ -164,7 +150,7 @@
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/com/example/springboot/HelloController.java</url>
-          <line>71</line>
+          <line>80</line>
           <option name="timeStamp" value="2" />
         </line-breakpoint>
       </breakpoints>
