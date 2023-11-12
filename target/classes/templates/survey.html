@@ -3,14 +3,94 @@
 <head>
   <meta charset="UTF-8">
   <link rel="stylesheet" type="text/css" th:href="@{/css/styles.css}"/>
-  <link rel="stylesheet" type="text/css" th:href="@{/css/modal.css}"/>
+  <link rel="stylesheet" type="text/css" th:href="@{/css/likertScale.css}"/>
+  <link href="webjars/bootstrap/3.4.0/css/bootstrap.min.css" rel="stylesheet">
+  <script src="webjars/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+  <script src="webjars/jquery/3.7.1/jquery.min.js"></script>
 
   <title>Umfrage</title>
 </head>
 <body>
-<h2>Umfrage der Studie</h2>
-<span>Denke an deine Interaktion mit der Webseite zurück und wähle die Aussagen, die deine Erfahrungen auf der Webseite passend beschreiben.</span>
+<div class="container-fluid">
+  <h2>Umfrage der Studie</h2>
+  <span>Denke an deine Interaktion mit der Webseite zurück und wähle die Aussagen, die deine Erfahrungen auf der Webseite passend beschreiben.</span>
 
 
+  <div class="wrap">
+    <form id="uxForm" th:action="@{/saveUxData}" th:object="${userExperience}" method="post">
+      <label class="statement">This HTML Likert scale is easy to use.</label>
+      <ul class='likert'>
+        <li>
+          <input id="test" type="radio" name="likert" th:field="*{value1}" value="1" class="radio">
+          <label for="test">Strongly agree</label>
+        </li>
+        <li>
+          <input type="radio" name="likert" th:field="*{value1}" value="2">
+          <label>Agree</label>
+        </li>
+        <li>
+          <input type="radio" name="likert" th:field="*{value1}" value="3">
+          <label>Neutral</label>
+        </li>
+        <li>
+          <input type="radio" name="likert" th:field="*{value1}" value="4">
+          <label>Disagree</label>
+        </li>
+        <li>
+          <input type="radio" name="likert" th:field="*{value1}" value="5">
+          <label>Strongly disagree</label>
+        </li>
+      </ul>
+      <label class="statement">It's clear that this is a responsive design.</label>
+      <ul class='likert'>
+        <li>
+          <input type="radio" name="likert" th:field="*{value2}" value="1">
+          <label>Strongly agree</label>
+        </li>
+        <li>
+          <input type="radio" name="likert" th:field="*{value2}" value="2">
+          <label>Agree</label>
+        </li>
+        <li>
+          <input type="radio" name="likert" th:field="*{value2}" value="3">
+          <label>Neutral</label>
+        </li>
+        <li>
+          <input type="radio" name="likert" th:field="*{value2}" value="4">
+          <label>Disagree</label>
+        </li>
+        <li>
+          <input type="radio" name="likert" th:field="*{value2}" value="5">
+          <label>Strongly disagree</label>
+        </li>
+      </ul>
+      <label class="statement">Codepen.io is an excellent tool for prototyping.</label>
+      <ul class='likert'>
+        <li>
+          <input type="radio" name="likert" th:field="*{value3}" value="1">
+          <label>Strongly agree</label>
+        </li>
+        <li>
+          <input type="radio" name="likert" th:field="*{value3}" value="2">
+          <label>Agree</label>
+        </li>
+        <li>
+          <input type="radio" name="likert" th:field="*{value3}" value="3">
+          <label>Neutral</label>
+        </li>
+        <li>
+          <input type="radio" name="likert" th:field="*{value3}" value="4">
+          <label>Disagree</label>
+        </li>
+        <li>
+          <input type="radio" name="likert" th:field="*{value3}" value="5">
+          <label>Strongly disagree</label>
+        </li>
+      </ul>
+    </form>
+  </div>
+
+  <input form="uxForm" class="btn btn-primary" id="submitButton" type="submit" value="Studie abschließen">
+</div>
 </body>
 </html>

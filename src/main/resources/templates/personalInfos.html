@@ -4,27 +4,32 @@
     <meta charset="UTF-8">
     <link rel="stylesheet" type="text/css" th:href="@{/css/styles.css}"/>
     <link rel="stylesheet" type="text/css" th:href="@{/css/modal.css}"/>
+    <link href="webjars/bootstrap/3.4.0/css/bootstrap.min.css" rel="stylesheet">
+    <script src="webjars/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    <script src="webjars/jquery/3.7.1/jquery.min.js"></script>
 
     <title>Deine Daten</title>
 </head>
 <body>
-<h2>Für die Studie benötige ich noch ein paar Angaben von dir!</h2>
-<br>
-<form id="personalInformation" th:action="${/testPage}" method="get">
-    <label for="age">Dein Alter: </label>
-    <input form="personalInformation" type="number" id="age" placeholder="Bitte gib an, wie alt du bist.">
-
+<div class="container-fluid">
+    <h2>Für die Studie benötige ich noch ein paar Angaben von dir!</h2>
     <br>
+    <form id="personalInformation" th:action="@{/testPage}" method="get">
+        <label for="age">Dein Alter: </label>
+        <input form="personalInformation" type="number" id="age" placeholder="Bitte gib an, wie alt du bist.">
 
-    <label for="education">Deine Ausbildung: </label>
-    <input form="personalInformation" type="text" id="education" >
+        <br>
 
-    <h4>Deine Aufgabe:</h4>
-    <p>Mit dem Klick auf den folgenden Button wirst du zur Webseite weitergeleitet.
-        Scrolle diese bitte von oben nach unten durch und schaue dir die Inhalte gut an.
-        Am Ende der Seite findest du einen Button, der dich zum Fragebogen dieser Studie führt.</p>
+        <label for="education">Deine Ausbildung: </label>
+        <input form="personalInformation" type="text" id="education" >
 
-    <input form="personalInformation" type="submit" value="Weiter zur Webseite">
-</form>
+        <h4>Deine Aufgabe:</h4>
+        <p>Mit dem Klick auf den folgenden Button wirst du zur Webseite weitergeleitet.
+            Scrolle diese bitte von oben nach unten durch und schaue dir die Inhalte gut an.
+            Am Ende der Seite findest du einen Button, der dich zum Fragebogen dieser Studie führt.</p>
+
+        <input form="personalInformation" class="btn btn-primary" type="submit" value="Weiter zur Webseite">
+    </form>
+</div>
 </body>
 </html>
