@@ -5,22 +5,39 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="faa9dc7f-cc2e-43ef-b4a8-3f0de8c95e37" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/entities/EducationDirection.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/repositories/IEducationDirectionRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/services/IEducationDirectionService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/services/implementations/EducationDirectionService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/mail.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/example/springboot/HelloController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/springboot/HelloController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/entities/Person.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/entities/Person.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/entities/UserExperience.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/entities/UserExperience.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/services/IEducationService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/services/IEducationService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/services/implementations/EducationService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/services/implementations/EducationService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/css/imageSlider.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/css/imageSlider.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/css/likertScale.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/css/likertScale.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/css/modal.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/css/modal.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/static/css/styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/css/styles.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/dataUsage.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/dataUsage.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/endPage.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/endPage.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/templates/personalInfos.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/personalInfos.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/templates/startPage.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/startPage.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/survey.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/survey.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/templates/testPage.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/testPage.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/springboot/HelloController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/springboot/HelloController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/entities/Person.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/entities/Person.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/entities/UserExperience.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/entities/UserExperience.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/services/IEducationService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/services/IEducationService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/services/implementations/EducationService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/services/implementations/EducationService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/css/styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/static/css/styles.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/templates/dataUsage.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/dataUsage.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/templates/endPage.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/endPage.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/templates/personalInfos.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/personalInfos.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/templates/startPage.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/startPage.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/templates/survey.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/survey.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/templates/testPage.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/testPage.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -64,69 +81,40 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;android.gradle.sync.needed&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/Users/oliverwolf/Documents/FHWS_MIS/Masterarbeit/Prototypen/Traditional&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "DefaultHtmlFileTemplate": "HTML File",
+    "RequestMappingsPanelOrder0": "0",
+    "RequestMappingsPanelOrder1": "1",
+    "RequestMappingsPanelWidth0": "75",
+    "RequestMappingsPanelWidth1": "75",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "android.gradle.sync.needed": "true",
+    "git-widget-placeholder": "main",
+    "last_opened_file_path": "/Users/oliverwolf/Documents/FHWS_MIS/Masterarbeit/Prototypen/Traditional",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/src/main/resources/static.images" />
     </key>
   </component>
-  <component name="RunManager" selected="Maven.spring-boot-initial [spring-boot:run]">
-    <configuration name="spring-boot-initial [spring-boot:run]" type="MavenRunConfiguration" factoryName="Maven" nameIsGenerated="true">
-      <MavenSettings>
-        <option name="myGeneralSettings" />
-        <option name="myRunnerSettings" />
-        <option name="myRunnerParameters">
-          <MavenRunnerParameters>
-            <option name="cmdOptions" />
-            <option name="profiles">
-              <set />
-            </option>
-            <option name="goals">
-              <list>
-                <option value="spring-boot:run" />
-              </list>
-            </option>
-            <option name="pomFileName" />
-            <option name="profilesMap">
-              <map />
-            </option>
-            <option name="projectsCmdOptionValues">
-              <list />
-            </option>
-            <option name="resolveToWorkspace" value="false" />
-            <option name="workingDirPath" value="$PROJECT_DIR$" />
-          </MavenRunnerParameters>
-        </option>
-      </MavenSettings>
-      <method v="2" />
-    </configuration>
-    <configuration name="Application" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+  <component name="RunManager">
+    <configuration name="spring-boot-initial" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
       <module name="spring-boot-initial" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.example.springboot.Application" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <list>
-      <item itemvalue="Maven.spring-boot-initial [spring-boot:run]" />
-      <item itemvalue="Spring Boot.Application" />
-    </list>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -138,19 +126,32 @@
       <updated>1699642333108</updated>
       <workItem from="1699642334127" duration="1829000" />
       <workItem from="1699747140107" duration="7345000" />
-      <workItem from="1699792881631" duration="9670000" />
+      <workItem from="1699792881631" duration="10545000" />
+      <workItem from="1699872890711" duration="4234000" />
+      <workItem from="1699878012521" duration="2313000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/com/example/springboot/HelloController.java</url>
-          <line>80</line>
+          <line>93</line>
           <option name="timeStamp" value="2" />
         </line-breakpoint>
       </breakpoints>

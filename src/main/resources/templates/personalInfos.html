@@ -3,10 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <link rel="stylesheet" type="text/css" th:href="@{/css/styles.css}"/>
-    <link rel="stylesheet" type="text/css" th:href="@{/css/modal.css}"/>
-    <link href="webjars/bootstrap/3.4.0/css/bootstrap.min.css" rel="stylesheet">
-    <script src="webjars/bootstrap/3.4.0/js/bootstrap.min.js"></script>
-    <script src="webjars/jquery/3.7.1/jquery.min.js"></script>
+
+    <link type="text/css" rel="stylesheet" th:href="@{/webjars/bootstrap/3.4.0/css/bootstrap.min.css}"/>
+    <script type="text/javascript" th:src="@{/webjars/bootstrap/3.4.0/js/bootstrap.min.js}"></script>
+    <script type="text/javascript" th:src="@{/webjars/jquery/3.7.1/jquery.min.js}"></script>
+    <script type="text/javascript" th:src="@{/webjars/select2/2.4.0.13/js/select2.full.js}"></script>
 
     <title>Deine Daten</title>
 </head>
@@ -14,25 +15,55 @@
 <div class="container-fluid" style="text-align: center;">
     <h2>Infos zu deiner Person</h2>
     <p>Für die Auswertung der Studie benötige ich noch ein paar Angaben von dir:</p>
-    <form id="personalInformation" th:action="@{/testPage}" method="get">
-        <label for="age">Dein Alter: </label>
-        <input form="personalInformation" type="number" id="age" placeholder="Bitte gib an, wie alt du bist.">
-        <br>
-        <label for="education">Deinen Ausbildungsstand: </label>
-        <input form="personalInformation" type="text" id="education" >
-        <br>
-        <label for="educationDirection">Deine Ausbildungsrichtung: </label>
-        <input form="personalInformation" type="text" id="educationDirection" >
 
-        <hr>
+    <form id="personalInformation" th:action="@{/testPage}" method="get"></form>
 
-        <h4>Deine Aufgabe:</h4>
-        <p>Mit dem Klick auf den folgenden Button wirst du zur Webseite weitergeleitet.
-            <br>Scrolle diese bitte von oben nach unten durch und schaue dir die Inhalte gut an.
-            <br>Am Ende der Seite findest du einen Button, der dich zum Fragebogen dieser Studie führt.</p>
+    <div class="card">
+        <div class="card-body">
+            <div class="row col-md-12">
+                <label for="age">Dein Alter: </label>
+                <input form="personalInformation" class="form-control" type="number" id="age" placeholder="Bitte gib an, wie alt du bist.">
+            </div>
+            <br>
+            <div class="row col-md-12">
+                <div class="col-md-6">
+                    <label for="selectEduction">Dein Bildungsstand: </label>
+                    <select form="personalInformation" id="selectEduction" class="form-control select2-select" name="educationId">
+                        <option th:each="education : ${educations}"
+                                th:value="${education.getId()}"
+                                th:text="${education.getTitle()}"></option>
+                    </select>
+                </div>
+                <div class="col-md-6">
+                    <label for="selectEducationDirection">Deine Bildungsrichtung: </label>
+                    <select form="personalInformation" id="selectEducationDirection" class="form-control select2-select" name="educationDirectionId">
+                        <option th:each="educationDirection : ${educationDirections}"
+                                th:value="${educationDirection.getId()}"
+                                th:text="${educationDirection.getTitle()}"></option>
+                    </select>
+                </div>
+            </div>
+        </div>
+    </div>
 
-        <input form="personalInformation" class="btn btn-primary" type="submit" value="Weiter zur Webseite">
-    </form>
+    <hr>
+
+    <div class="card">
+        <div class="card-body">
+            <h4>Deine Aufgabe:</h4>
+            <p>Mit dem Klick auf den folgenden Button wirst du zur Webseite weitergeleitet.
+                <br>Scrolle diese bitte von oben nach unten durch und schaue dir die Inhalte gut an.
+                <br>Am Ende der Seite findest du einen Button, der dich zum Fragebogen dieser Studie führt.</p>
+
+            <input form="personalInformation" class="btn btn-primary" type="submit" value="Weiter zur Webseite">
+        </div>
+    </div>
 </div>
+
+<script>
+    $(document).ready(function () {
+        $('.select2-select').select2({});
+    })
+</script>
 </body>
 </html>

@@ -15,6 +15,7 @@ import services.implementations.EducationService;
 import services.implementations.PersonService;
 import services.implementations.UserExperienceService;
 
+import java.util.ArrayList;
 import java.util.List;
 
 @Controller
@@ -40,22 +41,34 @@ public class HelloController {
 
 	@RequestMapping(value = "/person", method = RequestMethod.GET)
 	public String showPersonPage(Model model) {
-		/*List<Education> educationList = educationService.getAll();
-		model.addAttribute("educationList", educationList);
-		List<EducationDirection> educationDirections = educationDirectionService.getAll();
-		model.addAttribute("educationDirections", educationDirections);*/
+		List<Education> educations = new ArrayList<>(); //educationService.getAll();
+		Education e = new Education();
+		e.setTitle("Test Education");
+		e.setId(1L);
+		educations.add(e);
+		model.addAttribute("educations", educations);
+
+		List<EducationDirection> educationDirections = new ArrayList<>(); //educationDirectionService.getAll();
+		EducationDirection ed = new EducationDirection();
+		ed.setTitle("Test EducationDirection");
+		ed.setId(1L);
+		educationDirections.add(ed);
+		model.addAttribute("educationDirections", educationDirections);
 
 		return "personalInfos";
 	}
 
 	@RequestMapping(value = "/savePerson", method = RequestMethod.POST)
 	public String saveUxData(@RequestParam("age") Integer age,
-							 @RequestParam("educationId") Long educationId) {
+							 @RequestParam("educationId") Long educationId,
+							 @RequestParam("educationDirectionId") Long educationDirectionId) {
 		/*Education education = educationService.getById(educationId);
+		EducationDirection educationDirection = educationDirectionService.getById(educationDirectionId);
 
 		Person person = new Person();
 		person.setAge(age);
 		person.setEducation(education);
+		person.setEducationDirection(educationDirection);
 		personService.save(person);*/
 
 		return "redirect:testPage";
