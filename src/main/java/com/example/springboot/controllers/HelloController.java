@@ -2,24 +2,18 @@ package com.example.springboot.controllers;
 
 import com.example.springboot.entities.Education;
 import com.example.springboot.entities.EducationDirection;
-import com.example.springboot.entities.UserExperience;
+import com.example.springboot.entities.Person;
 import com.example.springboot.repositories.IEducationDirectionRepository;
 import com.example.springboot.repositories.IEducationRepository;
 import com.example.springboot.repositories.IPersonRepository;
-import com.example.springboot.repositories.IUserExperienceRepository;
-import com.example.springboot.services.IPersonService;
-import com.example.springboot.services.implementations.EducationService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.ui.Model;
-import com.example.springboot.services.IEducationDirectionService;
-import com.example.springboot.services.IEducationService;
-import com.example.springboot.services.IUserExperienceService;
 
-import java.util.ArrayList;
 import java.util.List;
+import java.util.Optional;
 
 @Controller
 public class HelloController {
@@ -30,10 +24,9 @@ public class HelloController {
 	private IEducationDirectionRepository educationDirectionRepository;
 
 	@Autowired
-	private IUserExperienceRepository userExperienceRepository;
-
-	@Autowired
 	private IPersonRepository personRepository;
+
+	Person currentPerson;
 
 
 	@Value("${spring.application.name}")
@@ -47,39 +40,29 @@ public class HelloController {
 
 	@RequestMapping(value = "/person", method = RequestMethod.GET)
 	public String showPersonPage(Model model) {
-		List<Education> educations = new ArrayList<>();//educationRepository.findAll());
-		Education e = new Education();
-		e.setTitle("Test Education");
-		e.setId(1L);
-		educations.add(e);
+		List<Education> educations = educationRepository.findAll();
 		model.addAttribute("educations", educations);
 
-		List<EducationDirection> educationDirections = new ArrayList<>(); //educationDirectionService.getAll();
-		EducationDirection ed = new EducationDirection();
-		ed.setTitle("Test EducationDirection");
-		ed.setId(1L);
-		educationDirections.add(ed);
+		List<EducationDirection> educationDirections = educationDirectionRepository.findAll();
 		model.addAttribute("educationDirections", educationDirections);
 
 		return "personalInfos";
 	}
 
-	@RequestMapping(value = "/savePerson", method = RequestMethod.POST)
-	public String saveUxData(@RequestParam("age") Integer age,
+	@RequestMapping(value = "savePerson", method = RequestMethod.POST)
+	public String saveUxData(@RequestParam(value = "age", required = false) Integer age,
 							 @RequestParam("educationId") Long educationId,
 							 @RequestParam("educationDirectionId") Long educationDirectionId) {
-		/*Education education = educationService.getById(educationId);
-		EducationDirection educationDirection = educationDirectionService.getById(educationDirectionId);
+		Optional<Education> educationOpt = educationRepository.findById(educationId);
+		Optional<EducationDirection> educationDirectionOpt = educationDirectionRepository.findById(educationDirectionId);
 
-		Person person = new Person();
-		person.setAge(age);
-		person.setEducation(education);
-		person.setEducationDirection(educationDirection);
-		personService.save(person);*/
-
-		EducationDirection Wirtschaftswissenschaften = new EducationDirection();
-		Wirtschaftswissenschaften.setTitle("Wirtschaftswissenschaften");
-		educationDirectionRepository.save(Wirtschaftswissenschaften);
+		currentPerson = new Person();
+		currentPerson.setAge(age);
+		if(educationOpt.isPresent() && educationDirectionOpt.isPresent()) {
+			currentPerson.setEducation(educationOpt.get());
+			currentPerson.setEducationDirection(educationDirectionOpt.get());
+		}
+		personRepository.saveAndFlush(currentPerson);
 
 		return "redirect:testPage";
 	}
@@ -92,7 +75,6 @@ public class HelloController {
 
 	@RequestMapping(value = "/survey", method = RequestMethod.GET)
 	public String showSurvey(Model model) {
-		model.addAttribute("userExperience", new UserExperience());
 		return "survey";
 	}
 
@@ -101,18 +83,19 @@ public class HelloController {
 							 @RequestParam(value = "value2", required = false) Integer value2,
 							 @RequestParam(value = "value3", required = false) Integer value3) {
 
-		/*UserExperience userExperience = new UserExperience();
-		userExperience.setValue1(value1);
-		userExperience.setValue1(value2);
-		userExperience.setValue1(value3);
-		userExperienceService.save(userExperience);*/
+		// save user experience data to database
+		currentPerson.setValue1(value1);
+		currentPerson.setValue2(value2);
+		currentPerson.setValue3(value3);
+		personRepository.save(currentPerson);
 
 		return "redirect:goodbye";
 	}
 
 	@RequestMapping(value = "/goodbye", method = RequestMethod.GET)
 	public String showEndPage(Model model) {
+		Optional<Person> person = personRepository.findAll().stream().findFirst();
+		model.addAttribute("person", person.get());
 		return "endPage";
 	}
-
 }

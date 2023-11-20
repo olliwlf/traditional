@@ -5,6 +5,5 @@ import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.data.repository.CrudRepository;
 import org.springframework.stereotype.Repository;
 
-//@Repository
-public interface IEducationRepository extends CrudRepository<Education, Long> {
+public interface IEducationRepository extends JpaRepository<Education, Long> {
 }
