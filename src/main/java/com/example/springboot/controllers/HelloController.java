@@ -35,6 +35,11 @@ public class HelloController {
 	@RequestMapping(value = "/", method = RequestMethod.GET)
 	public String showStartPage(Model model) {
 		model.addAttribute("appName", appName);
+
+		Person test = new Person();
+		test.setAge(100);
+		personRepository.saveAndFlush(test);
+
 		return "startPage";
 	}
 

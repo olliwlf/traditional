@@ -1041,8 +1041,8 @@ testdb|schema||db_user||UPDATE|G</Grants>
     </schema>
     <schema id="291" parent="1" name="studydb">
       <Current>1</Current>
-      <IntrospectionTimestamp>2023-11-20.19:22:40</IntrospectionTimestamp>
-      <LocalIntrospectionTimestamp>2023-11-20.17:22:40</LocalIntrospectionTimestamp>
+      <IntrospectionTimestamp>2023-11-20.21:16:22</IntrospectionTimestamp>
+      <LocalIntrospectionTimestamp>2023-11-20.19:16:22</LocalIntrospectionTimestamp>
       <CollationName>utf8mb4_0900_ai_ci</CollationName>
     </schema>
     <schema id="292" parent="1" name="sys">
@@ -1216,35 +1216,47 @@ testdb|schema||db_user||UPDATE|G</Grants>
       <NotNull>1</NotNull>
       <Position>10</Position>
     </column>
-    <foreign-key id="329" parent="301" name="fk_educations_persons">
+    <column id="329" parent="301" name="value1">
+      <DasType>int|0s</DasType>
+      <Position>11</Position>
+    </column>
+    <column id="330" parent="301" name="value2">
+      <DasType>int|0s</DasType>
+      <Position>12</Position>
+    </column>
+    <column id="331" parent="301" name="value3">
+      <DasType>int|0s</DasType>
+      <Position>13</Position>
+    </column>
+    <foreign-key id="332" parent="301" name="fk_educations_persons">
       <ColNames>education_id</ColNames>
       <RefColNames>id</RefColNames>
       <RefTableName>educations</RefTableName>
     </foreign-key>
-    <foreign-key id="330" parent="301" name="fk_persons_education_directions">
+    <foreign-key id="333" parent="301" name="fk_persons_education_directions">
       <ColNames>education_direction_id</ColNames>
       <RefColNames>id</RefColNames>
       <RefTableName>education_directions</RefTableName>
     </foreign-key>
-    <index id="331" parent="301" name="PRIMARY">
+    <index id="334" parent="301" name="PRIMARY">
       <ColNames>id</ColNames>
       <Type>btree</Type>
       <Unique>1</Unique>
     </index>
-    <index id="332" parent="301" name="fk_educations_persons">
+    <index id="335" parent="301" name="fk_educations_persons">
       <ColNames>education_id</ColNames>
       <Type>btree</Type>
     </index>
-    <index id="333" parent="301" name="fk_persons_education_directions">
+    <index id="336" parent="301" name="fk_persons_education_directions">
       <ColNames>education_direction_id</ColNames>
       <Type>btree</Type>
     </index>
-    <key id="334" parent="301" name="PRIMARY">
+    <key id="337" parent="301" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>
       <Primary>1</Primary>
       <UnderlyingIndexName>PRIMARY</UnderlyingIndexName>
     </key>
-    <column id="335" parent="302" name="next_val">
+    <column id="338" parent="302" name="next_val">
       <DasType>bigint|0s</DasType>
       <Position>1</Position>
     </column>
