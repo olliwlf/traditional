@@ -34,7 +34,7 @@ public class Education {
 
     /** Hibernate */
 
-    @Column(name="createdAt", updatable = false)
+    @Column(name="created_at", updatable = false)
     @Temporal(TemporalType.TIMESTAMP)
     @CreatedDate
     private Date createdAt;

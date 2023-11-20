@@ -34,12 +34,12 @@ public class EducationDirection {
 
     /** Hibernate */
 
-    @Column(name="createdAt", updatable = false)
+    @Column(name="created_at", updatable = false)
     @Temporal(TemporalType.TIMESTAMP)
     @CreatedDate
     private Date createdAt;
 
-    @Column(name="modifiedAt")
+    @Column(name="modified_at")
     @Temporal(TemporalType.TIMESTAMP)
     @LastModifiedDate
     private Date modifiedAt;
