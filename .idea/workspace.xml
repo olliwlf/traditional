@@ -5,97 +5,34 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="faa9dc7f-cc2e-43ef-b4a8-3f0de8c95e37" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/8.3/checksums/checksums.lock" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/8.3/checksums/md5-checksums.bin" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/8.3/checksums/sha1-checksums.bin" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/8.3/dependencies-accessors/dependencies-accessors.lock" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/8.3/dependencies-accessors/gc.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/8.3/fileChanges/last-build.bin" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/8.3/fileHashes/fileHashes.lock" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/8.3/gc.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/cache.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/vcs-1/gc.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/jarRepositories.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/gradlew" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/gradlew.bat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mvnw" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mvnw.cmd" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/settings.gradle" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/springboot/Application.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/springboot/HelloController.java" beforeDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/springboot/entities/Education.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/springboot/entities/EducationDirection.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/springboot/entities/Person.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/springboot/entities/UserExperience.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/springboot/Application.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/springboot/Application.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/springboot/HelloController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/springboot/controllers/HelloController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/controllers/MyController.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/entities/Education.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/entities/EducationDirection.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/entities/Person.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/entities/UserExperience.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/repositories/IEducationDirectionRepository.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/repositories/IEducationRepository.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/repositories/IPersonRepository.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/repositories/IUserExperienceRepository.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/services/IEducationDirectionService.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/services/IEducationService.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/services/IPersonService.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/services/IUserExperienceService.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/services/implementations/EducationDirectionService.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/services/implementations/EducationService.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/services/implementations/PersonService.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/services/implementations/UserExperienceService.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/mail.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static.js/imageSlider.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/css/imageSlider.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/css/likertScale.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/css/modal.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/css/styles.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/dataUsage.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/endPage.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/personalInfos.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/startPage.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/survey.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/testPage.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/example/springboot/HelloControllerTest.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Controllers/MyController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/application.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/example/springboot/Application.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/example/springboot/HelloController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/entities/Education.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/entities/Person.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/entities/UserExperience.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/repositories/IEducationRepository.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/repositories/IPersonRepository.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/repositories/IUserExperienceRepository.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/services/IEducationService.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/services/IPersonService.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/services/IUserExperienceService.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/services/implementations/EducationService.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/services/implementations/PersonService.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/services/implementations/UserExperienceService.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/css/likertScale.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/css/modal.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/css/styles.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/templates/dataUsage.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/templates/endPage.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/templates/personalInfos.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/templates/startPage.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/templates/survey.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/templates/testPage.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/com/example/springboot/HelloControllerTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/repositories/IEducationDirectionRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/springboot/repositories/IEducationDirectionRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/repositories/IEducationRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/springboot/repositories/IEducationRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/repositories/IPersonRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/springboot/repositories/IPersonRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/repositories/IUserExperienceRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/springboot/repositories/IUserExperienceRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/services/IEducationDirectionService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/springboot/services/IEducationDirectionService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/services/IEducationService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/springboot/services/IEducationService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/services/IPersonService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/springboot/services/IPersonService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/services/IUserExperienceService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/springboot/services/IUserExperienceService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/services/implementations/EducationDirectionService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/springboot/services/implementations/EducationDirectionService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/services/implementations/EducationService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/springboot/services/implementations/EducationService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/services/implementations/PersonService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/springboot/services/implementations/PersonService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/services/implementations/UserExperienceService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/springboot/services/implementations/UserExperienceService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -131,6 +68,9 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 5
 }</component>
@@ -151,28 +91,102 @@
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "WebServerToolWindowFactoryState": "false",
     "android.gradle.sync.needed": "true",
-    "git-widget-placeholder": "main",
+    "git-widget-placeholder": "temp",
     "last_opened_file_path": "/Users/oliverwolf/Documents/FHWS_MIS/Masterarbeit/Prototypen/Traditional",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
+    "settings.editor.selected.configurable": "preferences.lookFeel",
+    "spring-boot-initial.wasFacetEverAdded": "true",
     "vue.rearranger.settings.migration": "true"
+  },
+  "keyToStringList": {
+    "DatabaseDriversLRU": [
+      "mysql",
+      "azure"
+    ]
   }
 }]]></component>
+  <component name="ReactorSettings">
+    <option name="notificationShown" value="true" />
+  </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/src/main/resources/static.images" />
     </key>
   </component>
-  <component name="RunManager">
-    <configuration name="spring-boot-initial" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+  <component name="RunManager" selected="Spring Boot.Spring Boot Application">
+    <configuration default="true" type="AZURE_FUNCTION_SUPPORT" factoryName="Run Functions">
+      <option name="appName" />
+      <option name="appServicePlanName" />
+      <option name="appServicePlanResourceGroup" />
+      <option name="appSettingsKey" value="4174bb8a-421d-44f6-aa55-4fab27a0c7ec" />
+      <option name="artifact" />
+      <option name="debugOptions" />
+      <option name="deployment" />
+      <option name="deploymentStagingDirectoryPath" />
+      <option name="funcPath" />
+      <option name="functionHostArguments" />
+      <option name="hostJsonPath" />
+      <option name="insightsName" />
+      <option name="instrumentationKey" />
+      <option name="javaVersion" />
+      <option name="localSettingsJsonPath" />
+      <option name="moduleName" />
+      <option name="os" />
+      <option name="pricingTier" />
+      <option name="providerMap">
+        <map />
+      </option>
+      <option name="region" />
+      <option name="resourceGroup" />
+      <option name="stagingFolder" />
+      <option name="subscription" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="spring-boot-initial [spring-boot:run]" type="MavenRunConfiguration" factoryName="Maven" nameIsGenerated="true">
+      <MavenSettings>
+        <option name="myGeneralSettings" />
+        <option name="myRunnerSettings" />
+        <option name="myRunnerParameters">
+          <MavenRunnerParameters>
+            <option name="cmdOptions" />
+            <option name="profiles">
+              <set />
+            </option>
+            <option name="goals">
+              <list>
+                <option value="spring-boot:run" />
+              </list>
+            </option>
+            <option name="pomFileName" />
+            <option name="profilesMap">
+              <map />
+            </option>
+            <option name="projectsCmdOptionValues">
+              <list />
+            </option>
+            <option name="resolveToWorkspace" value="false" />
+            <option name="workingDirPath" value="$PROJECT_DIR$" />
+          </MavenRunnerParameters>
+        </option>
+      </MavenSettings>
+      <method v="2" />
+    </configuration>
+    <configuration name="Spring Boot Application" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
       <module name="spring-boot-initial" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.example.springboot.Application" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <list>
+      <item itemvalue="Maven.spring-boot-initial [spring-boot:run]" />
+      <item itemvalue="Spring Boot.Spring Boot Application" />
+    </list>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -186,7 +200,11 @@
       <workItem from="1699747140107" duration="7345000" />
       <workItem from="1699792881631" duration="10545000" />
       <workItem from="1699872890711" duration="4234000" />
-      <workItem from="1699878012521" duration="2942000" />
+      <workItem from="1699878012521" duration="8184000" />
+      <workItem from="1699915020982" duration="20000" />
+      <workItem from="1699915286628" duration="2316000" />
+      <workItem from="1699951917299" duration="6237000" />
+      <workItem from="1699959182409" duration="11964000" />
     </task>
     <servers />
   </component>
@@ -203,16 +221,5 @@
         </entry>
       </map>
     </option>
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/example/springboot/HelloController.java</url>
-          <line>93</line>
-          <option name="timeStamp" value="2" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
   </component>
 </project>
