@@ -29,6 +29,18 @@ public class Person {
     @Column(name="prior_scrollytelling_experience")
     private Boolean priorScrollytellingExperience;
 
+    @Column(name="test_group")
+    private Integer testGroup = 0; // 0 traditional, 1 scrollytelling
+
+    //@Column(name="value1")
+    private Integer value1;
+
+    //@Column(name="value2")
+    private Integer value2;
+
+    //@Column(name="value3")
+    private Integer value3;
+
     /** Foreign Keys */
 
     @ManyToOne
@@ -38,10 +50,6 @@ public class Person {
     @ManyToOne
     @JoinColumn(name="education_direction_id")
     private EducationDirection educationDirection;
-
-    @OneToOne(cascade = CascadeType.ALL)
-    @JoinColumn(name = "user_experience_id")
-    private UserExperience userExperience;
 
     /** Hibernate */
 

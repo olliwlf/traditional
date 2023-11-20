@@ -16,19 +16,22 @@
     <h2>Infos zu deiner Person</h2>
     <p>Für die Auswertung der Studie benötige ich noch ein paar Angaben von dir:</p>
 
-    <form id="personalInformation" th:action="@{/testPage}" method="get"></form>
+    <form id="personalInformation" th:action="@{/savePerson}" method="post"></form>
 
     <div class="card">
         <div class="card-body">
             <div class="row col-md-12">
                 <label for="age">Dein Alter: </label>
-                <input form="personalInformation" class="form-control" type="number" id="age" placeholder="Bitte gib an, wie alt du bist.">
+                <input form="personalInformation" class="form-control" type="number"
+                       id="age" name="age" placeholder="Bitte gib an, wie alt du bist.">
             </div>
             <br>
             <div class="row col-md-12">
                 <div class="col-md-6">
                     <label for="selectEduction">Dein Bildungsstand: </label>
-                    <select form="personalInformation" id="selectEduction" class="form-control select2-select" name="educationId">
+                    <select form="personalInformation" class="form-control select2-select"
+                            id="selectEduction" name="educationId">
+                        <option value="" disabled selected>Bitte wähle deinen Bildungsstand.</option>
                         <option th:each="education : ${educations}"
                                 th:value="${education.getId()}"
                                 th:text="${education.getTitle()}"></option>
@@ -36,7 +39,9 @@
                 </div>
                 <div class="col-md-6">
                     <label for="selectEducationDirection">Deine Bildungsrichtung: </label>
-                    <select form="personalInformation" id="selectEducationDirection" class="form-control select2-select" name="educationDirectionId">
+                    <select form="personalInformation" class="form-control select2-select"
+                            id="selectEducationDirection" name="educationDirectionId">
+                        <option value="" disabled selected>Bitte wähle deine Bildungsrichtung.</option>
                         <option th:each="educationDirection : ${educationDirections}"
                                 th:value="${educationDirection.getId()}"
                                 th:text="${educationDirection.getTitle()}"></option>
