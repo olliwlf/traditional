@@ -75,6 +75,7 @@ public class HelloController {
 
 	@RequestMapping(value = "/survey", method = RequestMethod.GET)
 	public String showSurvey(Model model) {
+		model.addAttribute("person", currentPerson);
 		return "survey";
 	}
 

@@ -5,6 +5,8 @@ import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
+import org.hibernate.annotations.CreationTimestamp;
+import org.hibernate.annotations.UpdateTimestamp;
 import org.springframework.data.annotation.CreatedDate;
 import org.springframework.data.annotation.LastModifiedDate;
 import java.util.Date;
@@ -27,7 +29,7 @@ public class Person {
     private Integer age;
 
     @Column(name="prior_scrollytelling_experience")
-    private Boolean priorScrollytellingExperience;
+    private Boolean priorScrollytellingExperience = false;
 
     @Column(name="test_group")
     private Integer testGroup = 0; // 0 traditional, 1 scrollytelling
@@ -53,13 +55,15 @@ public class Person {
 
     /** Hibernate */
 
-    @Column(name="createdAt", updatable = false)
+    @Column(name="created_at", updatable = false)
     @Temporal(TemporalType.TIMESTAMP)
     @CreatedDate
+    @CreationTimestamp
     private Date createdAt;
 
-    @Column(name="modifiedAt")
+    @Column(name="modified_at")
     @Temporal(TemporalType.TIMESTAMP)
     @LastModifiedDate
+    @UpdateTimestamp
     private Date modifiedAt;
 }

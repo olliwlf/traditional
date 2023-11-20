@@ -8,11 +8,11 @@
       <jdbc-url>jdbc:mysql://localhost:3306/studydb</jdbc-url>
       <working-dir>$ProjectFileDir$</working-dir>
     </data-source>
-    <data-source source="LOCAL" name="Azure SQL-DB" uuid="9489b296-d596-44f7-950f-5675c58b2158">
+    <data-source source="LOCAL" name="Azure SQL-DB" uuid="a9edfd10-0806-4026-851c-b7cf28e9b963">
       <driver-ref>azure.ms</driver-ref>
       <synchronize>true</synchronize>
       <jdbc-driver>com.microsoft.sqlserver.jdbc.SQLServerDriver</jdbc-driver>
-      <jdbc-url>jdbc:sqlserver://ux-masterthesis.database.windows.net:1433;encrypt=true;trustServerCertificate=false;loginTimeout=30;</jdbc-url>
+      <jdbc-url>jdbc:sqlserver://ux-masterthesis.database.windows.net:1433;encrypt=true;trustServerCertificate=false;loginTimeout=30;database=studydb;</jdbc-url>
       <jdbc-additional-properties>
         <property name="AZURE_SQL_DB_SERVER" value="/subscriptions/1a62a70e-76f2-46a9-b6ed-e631a9a46115/resourceGroups/masterthesis-group/providers/Microsoft.Sql/servers/ux-masterthesis" />
       </jdbc-additional-properties>

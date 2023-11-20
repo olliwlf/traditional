@@ -6,7 +6,8 @@
         <setting name="validation-enabled" value="true" />
         <setting name="provider-name" value="Hibernate" />
         <datasource-mapping>
-          <factory-entry name="entityManagerFactory" value="4e0e05b6-db2d-4f3c-b138-6f31ab3fbd47" />
+          <!--<factory-entry name="entityManagerFactory" value="4e0e05b6-db2d-4f3c-b138-6f31ab3fbd47" />--><!--local db-->
+          <factory-entry name="entityManagerFactory" value="a9edfd10-0806-4026-851c-b7cf28e9b963" /><!--azure db-->
         </datasource-mapping>
         <naming-strategy-map />
       </configuration>

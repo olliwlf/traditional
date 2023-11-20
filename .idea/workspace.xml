@@ -5,26 +5,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="faa9dc7f-cc2e-43ef-b4a8-3f0de8c95e37" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/4e0e05b6-db2d-4f3c-b138-6f31ab3fbd47.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/4e0e05b6-db2d-4f3c-b138-6f31ab3fbd47.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/4e0e05b6-db2d-4f3c-b138-6f31ab3fbd47/storage_v2/_src_/schema/studydb.B8z-jw.meta" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/4e0e05b6-db2d-4f3c-b138-6f31ab3fbd47/storage_v2/_src_/schema/studydb.B8z-jw.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/example/springboot/controllers/HelloController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/springboot/controllers/HelloController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/springboot/entities/Education.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/springboot/entities/Education.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/springboot/entities/EducationDirection.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/springboot/entities/EducationDirection.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/example/springboot/entities/Person.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/springboot/entities/Person.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/springboot/entities/UserExperience.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/springboot/repositories/IEducationDirectionRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/springboot/repositories/IEducationDirectionRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/springboot/repositories/IEducationRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/springboot/repositories/IEducationRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/springboot/repositories/IPersonRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/springboot/repositories/IPersonRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/springboot/repositories/IUserExperienceRepository.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/springboot/services/IEducationDirectionService.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/springboot/services/IEducationService.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/springboot/services/IPersonService.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/springboot/services/IUserExperienceService.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/springboot/services/implementations/EducationDirectionService.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/springboot/services/implementations/EducationService.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/springboot/services/implementations/PersonService.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/springboot/services/implementations/UserExperienceService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/templates/endPage.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/endPage.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/personalInfos.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/personalInfos.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/survey.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/survey.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -83,7 +71,7 @@
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "WebServerToolWindowFactoryState": "false",
     "android.gradle.sync.needed": "true",
-    "git-widget-placeholder": "speichern-und-abfragen-aus-datenbank",
+    "git-widget-placeholder": "try__remote__database__working",
     "last_opened_file_path": "/Users/oliverwolf/Documents/FHWS_MIS/Masterarbeit/Prototypen/Traditional",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
@@ -196,7 +184,7 @@
       <workItem from="1699915020982" duration="20000" />
       <workItem from="1699915286628" duration="2316000" />
       <workItem from="1699951917299" duration="6237000" />
-      <workItem from="1699959182409" duration="18244000" />
+      <workItem from="1699959182409" duration="26336000" />
     </task>
     <servers />
   </component>
