@@ -2,7 +2,9 @@ package com.example.springboot.entities;
 
 import jakarta.persistence.*;
 import lombok.*;
+import org.hibernate.annotations.CreationTimestamp;
 import org.hibernate.annotations.DynamicUpdate;
+import org.hibernate.annotations.UpdateTimestamp;
 import org.springframework.data.annotation.CreatedDate;
 import org.springframework.data.annotation.LastModifiedDate;
 import java.util.Date;
@@ -37,10 +39,12 @@ public class Education {
     @Column(name="created_at", updatable = false)
     @Temporal(TemporalType.TIMESTAMP)
     @CreatedDate
+    @CreationTimestamp
     private Date createdAt;
 
-    @Column(name="modifiedAt")
+    @Column(name="modified_at")
     @Temporal(TemporalType.TIMESTAMP)
     @LastModifiedDate
+    @UpdateTimestamp
     private Date modifiedAt;
 }
