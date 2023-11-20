@@ -6,13 +6,8 @@
   <component name="ChangeListManager">
     <list default="true" id="faa9dc7f-cc2e-43ef-b4a8-3f0de8c95e37" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/springboot/controllers/HelloController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/springboot/controllers/HelloController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/springboot/entities/Education.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/springboot/entities/Education.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/springboot/entities/EducationDirection.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/springboot/entities/EducationDirection.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/springboot/entities/Person.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/springboot/entities/Person.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-boot-initial.iml" beforeDir="false" afterPath="$PROJECT_DIR$/spring-boot-initial.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/endPage.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/endPage.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/survey.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/survey.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -184,7 +179,7 @@
       <workItem from="1699915020982" duration="20000" />
       <workItem from="1699915286628" duration="2316000" />
       <workItem from="1699951917299" duration="6237000" />
-      <workItem from="1699959182409" duration="26336000" />
+      <workItem from="1699959182409" duration="26555000" />
     </task>
     <servers />
   </component>
