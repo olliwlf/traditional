@@ -12,6 +12,7 @@ import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.ui.Model;
 
+import java.util.Date;
 import java.util.List;
 import java.util.Optional;
 
@@ -27,6 +28,7 @@ public class HelloController {
 	private IPersonRepository personRepository;
 
 	Person currentPerson;
+	Long currentPersonId;
 
 
 	@Value("${spring.application.name}")
@@ -58,23 +60,38 @@ public class HelloController {
 
 		currentPerson = new Person();
 		currentPerson.setAge(age);
+		currentPerson.setTestGroup(0); // traditional -> redirect to testPageA
+		//currentPerson.setTestGroup(1); // scrollytelling -> redirect to testPageB
 		if(educationOpt.isPresent() && educationDirectionOpt.isPresent()) {
 			currentPerson.setEducation(educationOpt.get());
 			currentPerson.setEducationDirection(educationDirectionOpt.get());
 		}
-		personRepository.saveAndFlush(currentPerson);
+		Person newPerson = personRepository.saveAndFlush(currentPerson);
+		currentPersonId = newPerson.getId();
 
-		return "redirect:testPage";
+		return "redirect:testPageA"; // traditional -> redirect to testPageA
+		//return "redirect:testPageB"; // scrollytelling -> redirect to testPageB
 	}
 
-	@RequestMapping(value = "/testPage", method = RequestMethod.GET)
-	public String showTestPage(Model model) {
+	@RequestMapping(value = "/testPageA", method = RequestMethod.GET)
+	public String showTestPageA(Model model) {
 
-		return "testPage";
+		return "testPageA";
+	}
+
+	@RequestMapping(value = "/testPageB", method = RequestMethod.GET)
+	public String showTestPageB(Model model) {
+
+		return "testPageB";
 	}
 
 	@RequestMapping(value = "/survey", method = RequestMethod.GET)
 	public String showSurvey(Model model) {
+		if(currentPerson == null) {
+			List<Person> persons = personRepository.findAll();
+			Optional<Date> lastEntry = persons.stream().map(Person::getCreatedAt).max(Date :: compareTo);
+			currentPerson = persons.stream().filter(p -> p.getCreatedAt() == lastEntry.get()).findFirst().get();
+		}
 		model.addAttribute("person", currentPerson);
 		return "survey";
 	}
@@ -95,8 +112,7 @@ public class HelloController {
 
 	@RequestMapping(value = "/goodbye", method = RequestMethod.GET)
 	public String showEndPage(Model model) {
-		Optional<Person> person = personRepository.findAll().stream().findFirst();
-		model.addAttribute("person", person.get());
+		model.addAttribute("person", currentPerson);
 		return "endPage";
 	}
 }
