@@ -68,9 +68,9 @@ public class HelloController {
 	public String saveData(@RequestParam(value = "age", required = false) Integer age,
 						  @RequestParam("educationId") Long educationId,
 						  @RequestParam("educationDirectionId") Long educationDirectionId,
-						  @RequestParam(value = "value1", required = false) Integer value1,
-						  @RequestParam(value = "value2", required = false) Integer value2,
-						  @RequestParam(value = "value3", required = false) Integer value3) {
+						  @RequestParam(value = "a1") Integer attractivity1,
+						  @RequestParam(value = "a2") Integer attractivity2,
+						  @RequestParam(value = "a3") Integer attractivity3) {
 
 		Optional<Education> educationOpt = educationRepository.findById(educationId);
 		Optional<EducationDirection> educationDirectionOpt = educationDirectionRepository.findById(educationDirectionId);
@@ -85,9 +85,9 @@ public class HelloController {
 		}
 
 		// save user experience data to database
-		currentPerson.setValue1(value1);
-		currentPerson.setValue2(value2);
-		currentPerson.setValue3(value3);
+		currentPerson.setValue1(attractivity1);
+		currentPerson.setValue2(attractivity2);
+		currentPerson.setValue3(attractivity3);
 
 		Person newPerson = personRepository.saveAndFlush(currentPerson);
 

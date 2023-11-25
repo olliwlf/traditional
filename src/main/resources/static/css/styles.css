@@ -125,50 +125,12 @@ a:active {
 }
 
 /* Likert Skala */
-.likert {
-    display: flex;
-    justify-content: space-between;
-    margin-bottom: 10px;
-}
-
-.likert label {
-    flex: 1;
-    width: 15%
-}
-
-.likert div {
-    width: 10%;
-    display: flex;
-    justify-content: center;
-}
-
-.likert input[type="radio"] {
-    -ms-transform: scale(1.5); /* IE 9 */
-    -webkit-transform: scale(1.5); /* Chrome, Safari, Opera */
-    transform: scale(1.5);
-}
-
-.likert label:first-of-type,
-.likert label:last-of-type {
-    flex: 0;
-    border: none;
-    background: none;
-    padding: 0;
-    margin: 0;
-}
-
-.likert label:first-of-type {
-    text-align: left;
-}
-
-.likert label:last-of-type {
-    text-align: right;
-}
-
 .statement {
     display: block;
     text-align: center;
     margin-bottom: 5px;
+    font-weight: bold;
+    font-size: large
 }
 
 legend {
@@ -176,7 +138,42 @@ legend {
     margin-bottom: 20px;
 }
 
+.likert-table {
+    width: 100%; /* Die Tabelle nimmt die volle Breite des umgebenden Elements ein */
+    border-collapse: collapse; /* Entfernt den Abstand zwischen den Zellen */
+}
 
+.likert-table td {
+    text-align: center; /* Zentriert den Inhalt der Zellen */
+    padding: 4px; /* Fügt einen kleinen Abstand um die Zelleninhalte hinzu */
+}
+
+.likert-table .label-left {
+    text-align: left; /* Links ausrichten für das erste Label */
+    font-weight: bold;
+}
+
+.likert-table .label-right {
+    text-align: right; /* Rechts ausrichten für das letzte Label */
+    font-weight: bold;
+}
+
+.likert-table .label-center {
+    text-align: center; /* Mittig ausrichten für das Feedback Label */
+    font-weight: normal;
+}
+
+.likert-table input[type="radio"] {
+    -ms-transform: scale(1.5); /* IE 9 */
+    -webkit-transform: scale(1.5); /* Chrome, Safari, Opera */
+    transform: scale(1.5); /* Vergrößert die Radio-Buttons */
+    margin: 0; /* Entfernt den Standardabstand */
+}
+
+.table-border-top {
+    border-top: solid thin;
+    border-color: darkgrey;
+}
 
 
 
