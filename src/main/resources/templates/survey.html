@@ -23,17 +23,28 @@
         <h1 class="card-title center">Fragebogen zur Studie</h1>
         <div class="card-text">
 
+          <!-- Zuordnung zur Testgruppe: 0 = traditionell, 1 = scrollytelling -->
+          <fieldset>
+            <input form="uxForm" type="hidden" name="testGroup" th:value="${person.testGroup}">
+          </fieldset>
+
+          <!-- Vorerfahrung auf Scrollytelling-Webseiten -->
+          <fieldset th:if="${person.getTestGroup() == 1}">
+            <h3>Vorerfahrung mit Scrollytelling-Webseiten</h3>
+            <p>Info: Bei Scrollytelling wird eine Geschichte auf einer Webseite durch Animationen, Bilder und Videos erzählt, die sich durch Scrollen entfalten.</p>
+            <p>Hast du schon einmal eine Webseite im Scrollytelling-Format besucht?</p>
+            <input form="uxForm" type="radio" name="priorExperience" value="true" id="priorExperience-true" required>
+            <label for="priorExperience-true" style="margin-right:30px;margin-left:5px">Ja</label>
+            <input form="uxForm" type="radio" name="priorExperience" value="false" id="priorExperience-false">
+            <label for="priorExperience-false" style="margin-left:5px">Nein</label>
+          </fieldset>
+
           <div class="ux-data">
             <h3>Wahrnehmung der Webseite</h3>
-            <span>Denke an deine Interaktion mit der Webseite zurück und wähle die Aussagen, die deine Erfahrungen auf der Webseite passend beschreiben. Entscheide möglichst spontan! Bitte kreuze immer eine Antwort an, auch wenn du dir unsicher bist oder findest, dass ein Begriffspaar nicht so gut passt.
+            <p style="margin-bottom: 20px">Denke an deine Interaktion mit der Webseite zurück und wähle die Aussagen, die deine Erfahrungen auf der Webseite passend beschreiben. Entscheide möglichst spontan! Bitte kreuze immer eine Antwort an, auch wenn du dir unsicher bist oder findest, dass ein Begriffspaar nicht so gut passt.
                   Unter jeder Gruppe kannst du noch angeben, wie wichtig dieser Aspekt für deine Gesamtbewertung ist.
                   Es gibt keine „richtige“ oder „falsche“ Antwort. Nur deine persönliche Meinung zählt!
-            </span>
-
-            <fieldset>
-              <input form="uxForm" type="hidden" name="testGroup" th:value="${person.testGroup}">
-            </fieldset>
-
+            </p>
 
             <fieldset>
               <!--<legend>Attraktivität</legend>-->
@@ -153,37 +164,39 @@
             <h3>Infos zu deiner Person</h3>
             <span>Für eine bessere Auswertung der Studie benötige ich noch ein paar Angaben von dir:</span>
 
-            <div class="row">
-              <label for="age">Dein Alter: </label>
-              <input form="uxForm" class="form-control" type="number"
-                     id="age" name="age" placeholder="Bitte gib an, wie alt du bist." required>
-            </div>
+            <fieldset>
+              <div class="row col-md-12">
 
-            <div class="row col-md-12">
+                <div class="col-md-4">
+                  <label for="age">Dein Alter: </label>
+                  <input form="uxForm" class="form-control" type="number"
+                         id="age" name="age" placeholder="Bitte gib an, wie alt du bist." required>
+                </div>
 
-              <div class="col-md-6">
-                <label for="selectEduction">Dein Bildungsstand: </label>
-                <select form="uxForm" class="form-control select2-select"
-                        id="selectEduction" name="educationId" required>
-                  <option value="" disabled selected>Bitte wähle deinen Bildungsstand.</option>
-                  <option th:each="education : ${educations}"
-                          th:value="${education.getId()}"
-                          th:text="${education.getTitle()}"></option>
-                </select>
+                <div class="col-md-4">
+                  <label for="selectEduction">Dein Bildungsstand: </label>
+                  <select form="uxForm" class="form-control select2-select"
+                          id="selectEduction" name="educationId" required>
+                    <option value="" disabled selected>Bitte wähle deinen Bildungsstand.</option>
+                    <option th:each="education : ${educations}"
+                            th:value="${education.getId()}"
+                            th:text="${education.getTitle()}"></option>
+                  </select>
+                </div>
+
+                <div class="col-md-4">
+                  <label for="selectEducationDirection">Deine Bildungsrichtung: </label>
+                  <select form="uxForm" class="form-control select2-select"
+                          id="selectEducationDirection" name="educationDirectionId" required>
+                    <option value="" disabled selected>Bitte wähle deine Bildungsrichtung.</option>
+                    <option th:each="educationDirection : ${educationDirections}"
+                            th:value="${educationDirection.getId()}"
+                            th:text="${educationDirection.getTitle()}"></option>
+                  </select>
+                </div>
+
               </div>
-
-              <div class="col-md-6">
-                <label for="selectEducationDirection">Deine Bildungsrichtung: </label>
-                <select form="uxForm" class="form-control select2-select"
-                        id="selectEducationDirection" name="educationDirectionId" required>
-                  <option value="" disabled selected>Bitte wähle deine Bildungsrichtung.</option>
-                  <option th:each="educationDirection : ${educationDirections}"
-                          th:value="${educationDirection.getId()}"
-                          th:text="${educationDirection.getTitle()}"></option>
-                </select>
-              </div>
-
-            </div>
+            </fieldset>
 
           </div>
         </div>
