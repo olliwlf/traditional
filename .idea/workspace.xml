@@ -5,9 +5,27 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="faa9dc7f-cc2e-43ef-b4a8-3f0de8c95e37" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/springboot/controllers/ScrolController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/springboot/controllers/SurveyController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/startPageT.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/4e0e05b6-db2d-4f3c-b138-6f31ab3fbd47.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/4e0e05b6-db2d-4f3c-b138-6f31ab3fbd47.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/9489b296-d596-44f7-950f-5675c58b2158.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/9489b296-d596-44f7-950f-5675c58b2158/storage_v2/_src_/database/master.YiqNvw.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/9489b296-d596-44f7-950f-5675c58b2158/storage_v2/_src_/database/master.YiqNvw/schema/INFORMATION_SCHEMA.NBgcMw.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/9489b296-d596-44f7-950f-5675c58b2158/storage_v2/_src_/database/master.YiqNvw/schema/dbo.sYMBAA.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/9489b296-d596-44f7-950f-5675c58b2158/storage_v2/_src_/database/master.YiqNvw/schema/dbo.sYMBAA.zip" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/9489b296-d596-44f7-950f-5675c58b2158/storage_v2/_src_/database/master.YiqNvw/schema/sys.zb4BAA.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/a9edfd10-0806-4026-851c-b7cf28e9b963.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/a9edfd10-0806-4026-851c-b7cf28e9b963.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/a9edfd10-0806-4026-851c-b7cf28e9b963/storage_v2/_src_/database/studydb.B8z-jw/schema/dbo.sYMBAA.meta" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/a9edfd10-0806-4026-851c-b7cf28e9b963/storage_v2/_src_/database/studydb.B8z-jw/schema/dbo.sYMBAA.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/springboot/controllers/HelloController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/springboot/controllers/TradController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/startPage.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/startPageS.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/survey.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/survey.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/testPageA.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/testPageT.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/testPageB.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/testPageS.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -34,9 +52,9 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="HTML File" />
         <option value="Class" />
         <option value="Interface" />
+        <option value="HTML File" />
       </list>
     </option>
   </component>
@@ -67,11 +85,12 @@
     "WebServerToolWindowFactoryState": "false",
     "android.gradle.sync.needed": "true",
     "git-widget-placeholder": "main",
-    "last_opened_file_path": "/Users/oliverwolf/Documents/FHWS_MIS/Masterarbeit/Prototypen/Traditional",
+    "last_opened_file_path": "/Users/oliverwolf/Documents/FHWS_MIS/Masterarbeit/Prototypen/Traditional/src/main/resources/templates",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
     "settings.editor.selected.configurable": "preferences.lookFeel",
     "spring-boot-initial.wasFacetEverAdded": "true",
     "vue.rearranger.settings.migration": "true"
@@ -87,8 +106,14 @@
     <option name="notificationShown" value="true" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/main/resources/templates" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/src/main/resources/static.images" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.example.springboot.controllers" />
     </key>
   </component>
   <component name="RunManager" selected="Spring Boot.Spring Boot Application">
@@ -179,7 +204,8 @@
       <workItem from="1699915020982" duration="20000" />
       <workItem from="1699915286628" duration="2316000" />
       <workItem from="1699951917299" duration="6237000" />
-      <workItem from="1699959182409" duration="27828000" />
+      <workItem from="1699959182409" duration="57078000" />
+      <workItem from="1700943113352" duration="3639000" />
     </task>
     <servers />
   </component>
