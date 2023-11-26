@@ -175,6 +175,12 @@ input[type="radio"] {
     border-color: darkgrey;
 }
 
+.form-element-even, .form-element-odd {
+    background-color: #f5f5f5;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
 
 
 

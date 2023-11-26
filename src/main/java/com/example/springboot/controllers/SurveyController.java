@@ -39,12 +39,40 @@ public class SurveyController {
 
 	@RequestMapping(value = "/saveData", method = RequestMethod.POST)
 	public String saveData(@RequestParam(value = "age", required = false) Integer age,
-						  @RequestParam("testGroup") Integer testGroup,
-						  @RequestParam("educationId") Long educationId,
-						  @RequestParam("educationDirectionId") Long educationDirectionId,
-						  @RequestParam(value = "a1") Integer attractivity1,
-						  @RequestParam(value = "a2") Integer attractivity2,
-						  @RequestParam(value = "a3") Integer attractivity3) {
+						   @RequestParam("testGroup") Integer testGroup,
+						   @RequestParam(value = "testGroup", required = false) Integer priorExperience,
+						   @RequestParam(value = "s1") Integer stimulation1,
+						   @RequestParam(value = "s2") Integer stimulation2,
+						   @RequestParam(value = "s3") Integer stimulation3,
+						   @RequestParam(value = "s4") Integer stimulation4,
+						   @RequestParam(value = "sf") Integer stimulationFeedback,
+						   @RequestParam(value = "o1") Integer originalitat1,
+						   @RequestParam(value = "o2") Integer originalitat2,
+						   @RequestParam(value = "o3") Integer originalitat3,
+						   @RequestParam(value = "o4") Integer originalitat4,
+						   @RequestParam(value = "of") Integer originalitatFeedback,
+						   @RequestParam(value = "a1") Integer visuelleAesthetik1,
+						   @RequestParam(value = "a2") Integer visuelleAesthetik2,
+						   @RequestParam(value = "a3") Integer visuelleAesthetik3,
+						   @RequestParam(value = "a4") Integer visuelleAesthetik4,
+						   @RequestParam(value = "af") Integer visuelleAesthetikFeedback,
+						   @RequestParam(value = "b1") Integer intuitiveBedienung1,
+						   @RequestParam(value = "b2") Integer intuitiveBedienung2,
+						   @RequestParam(value = "b3") Integer intuitiveBedienung3,
+						   @RequestParam(value = "b4") Integer intuitiveBedienung4,
+						   @RequestParam(value = "bf") Integer intuitiveBedienungFeedback,
+						   @RequestParam(value = "is1") Integer inhaltsseriositat1,
+						   @RequestParam(value = "is2") Integer inhaltsseriositat2,
+						   @RequestParam(value = "is3") Integer inhaltsseriositat3,
+						   @RequestParam(value = "is4") Integer inhaltsseriositat4,
+						   @RequestParam(value = "isf") Integer inhaltsseriositatFeedback,
+						   @RequestParam(value = "iq1") Integer inhaltsqualitat1,
+						   @RequestParam(value = "iq2") Integer inhaltsqualitat2,
+						   @RequestParam(value = "iq3") Integer inhaltsqualitat3,
+						   @RequestParam(value = "iq4") Integer inhaltsqualitat4,
+						   @RequestParam(value = "iqf") Integer inhaltsqualitatFeedback,
+						   @RequestParam("educationId") Long educationId,
+						   @RequestParam("educationDirectionId") Long educationDirectionId) {
 
 		Optional<Education> educationOpt = educationRepository.findById(educationId);
 		Optional<EducationDirection> educationDirectionOpt = educationDirectionRepository.findById(educationDirectionId);
@@ -58,9 +86,9 @@ public class SurveyController {
 		}
 
 		// save user experience data to database
-		currentPerson.setValue1(attractivity1);
-		currentPerson.setValue2(attractivity2);
-		currentPerson.setValue3(attractivity3);
+		currentPerson.setValue1(stimulation1);
+		currentPerson.setValue2(stimulation2);
+		currentPerson.setValue3(stimulation3);
 
 		Person newPerson = personRepository.saveAndFlush(currentPerson);
 

@@ -32,11 +32,13 @@
           <fieldset th:if="${person.getTestGroup() == 1}">
             <h3>Vorerfahrung mit Scrollytelling-Webseiten</h3>
             <p>Info: Bei Scrollytelling wird eine Geschichte auf einer Webseite durch Animationen, Bilder und Videos erzählt, die sich durch Scrollen entfalten.</p>
-            <p>Hast du schon einmal eine Webseite im Scrollytelling-Format besucht?</p>
-            <input form="uxForm" type="radio" name="priorExperience" value="true" id="priorExperience-true" required>
-            <label for="priorExperience-true" style="margin-right:30px;margin-left:5px">Ja</label>
-            <input form="uxForm" type="radio" name="priorExperience" value="false" id="priorExperience-false">
-            <label for="priorExperience-false" style="margin-left:5px">Nein</label>
+            <div class="form-element-odd">
+              <p style="margin-top:20px">Hast du schon einmal eine Webseite im Scrollytelling-Format besucht?</p>
+              <input form="uxForm" type="radio" name="priorExperience" value="true" id="priorExperience-true" required>
+              <label for="priorExperience-true" style="margin-right:30px;margin-left:5px">Ja</label>
+              <input form="uxForm" type="radio" name="priorExperience" value="false" id="priorExperience-false">
+              <label for="priorExperience-false" style="margin-left:5px">Nein</label>
+            </div>
           </fieldset>
 
           <div class="ux-data">
@@ -47,12 +49,148 @@
             </p>
 
             <fieldset>
-              <!--<legend>Attraktivität</legend>-->
-              <label class="statement">Insgesamt empfinde ich das Produkt als</label>
-              <table class="likert-table">
+              <!--<legend>Stimulation</legend>-->
+              <label style="margin-top:20px" class="statement">Die Beschäftigung mit dem Produkt empfinde ich als</label>
+              <table class="likert-table form-element-even">
                 <tbody>
                 <tr>
-                  <td><label class="label-left">unerfreulich</label></td>
+                  <td><label class="label-left">langweilig</label></td>
+                  <td><input form="uxForm" type="radio" name="s1" value="1"></td>
+                  <td><input form="uxForm" type="radio" name="s1" value="2"></td>
+                  <td><input form="uxForm" type="radio" name="s1" value="3"></td>
+                  <td><input form="uxForm" type="radio" name="s1" value="4" required></td>
+                  <td><input form="uxForm" type="radio" name="s1" value="5"></td>
+                  <td><input form="uxForm" type="radio" name="s1" value="6"></td>
+                  <td><input form="uxForm" type="radio" name="s1" value="7"></td>
+                  <td><label class="label-right">spannend</label></td>
+                </tr>
+                <tr>
+                  <td><label class="label-left">uninteressant</label></td>
+                  <td><input form="uxForm" type="radio" name="s2" value="1"></td>
+                  <td><input form="uxForm" type="radio" name="s2" value="2"></td>
+                  <td><input form="uxForm" type="radio" name="s2" value="3"></td>
+                  <td><input form="uxForm" type="radio" name="s2" value="4" required></td>
+                  <td><input form="uxForm" type="radio" name="s2" value="5"></td>
+                  <td><input form="uxForm" type="radio" name="s2" value="6"></td>
+                  <td><input form="uxForm" type="radio" name="s2" value="7"></td>
+                  <td><label class="label-right">interessant</label></td>
+                </tr>
+                <tr>
+                  <td><label class="label-left">aktivierend</label></td>
+                  <td><input form="uxForm" type="radio" name="s3" value="7"></td>
+                  <td><input form="uxForm" type="radio" name="s3" value="6"></td>
+                  <td><input form="uxForm" type="radio" name="s3" value="5"></td>
+                  <td><input form="uxForm" type="radio" name="s3" value="4" required></td>
+                  <td><input form="uxForm" type="radio" name="s3" value="3"></td>
+                  <td><input form="uxForm" type="radio" name="s3" value="2"></td>
+                  <td><input form="uxForm" type="radio" name="s3" value="1"></td>
+                  <td><label class="label-right">einschläfernd</label></td>
+                </tr>
+                <tr>
+                  <td><label class="label-left">minderwertig</label></td>
+                  <td><input form="uxForm" type="radio" name="s4" value="1"></td>
+                  <td><input form="uxForm" type="radio" name="s4" value="2"></td>
+                  <td><input form="uxForm" type="radio" name="s4" value="3"></td>
+                  <td><input form="uxForm" type="radio" name="s4" value="4" required></td>
+                  <td><input form="uxForm" type="radio" name="s4" value="5"></td>
+                  <td><input form="uxForm" type="radio" name="s4" value="6"></td>
+                  <td><input form="uxForm" type="radio" name="s4" value="7"></td>
+                  <td><label class="label-right">wertvoll</label></td>
+                </tr>
+
+                <!-- Feedback zur Produkteigenschaft -->
+                <tr><td colspan="9"><label class="statement">Die durch diese Begriffe beschriebene Produkteigenschaft ist für mich</label></td></tr>
+                <tr>
+                  <td><label class="label-left">Völlig unwichtig</label></td>
+                  <td><input form="uxForm" type="radio" name="sf" value="1"></td>
+                  <td><input form="uxForm" type="radio" name="sf" value="2"></td>
+                  <td><input form="uxForm" type="radio" name="sf" value="3"></td>
+                  <td><input form="uxForm" type="radio" name="sf" value="4" required></td>
+                  <td><input form="uxForm" type="radio" name="sf" value="5"></td>
+                  <td><input form="uxForm" type="radio" name="sf" value="6"></td>
+                  <td><input form="uxForm" type="radio" name="sf" value="7"></td>
+                  <td><label class="label-right">Sehr wichtig</label></td>
+                </tr>
+                </tbody>
+              </table>
+            </fieldset>
+
+            <fieldset>
+              <hr style="margin-top:20px">
+              <!--<legend>Originalität</legend>-->
+              <label class="statement">Die Produktidee bzw. die Gestaltung des Produkts finde ich</label>
+              <table class="likert-table form-element-odd">
+                <tbody>
+                <tr>
+                  <td><label class="label-left">kreativ</label></td>
+                  <td><input form="uxForm" type="radio" name="o1" value="7"></td>
+                  <td><input form="uxForm" type="radio" name="o1" value="6"></td>
+                  <td><input form="uxForm" type="radio" name="o1" value="5"></td>
+                  <td><input form="uxForm" type="radio" name="o1" value="4" required></td>
+                  <td><input form="uxForm" type="radio" name="o1" value="3"></td>
+                  <td><input form="uxForm" type="radio" name="o1" value="2"></td>
+                  <td><input form="uxForm" type="radio" name="o1" value="1"></td>
+                  <td><label class="label-right">phantasielos</label></td>
+                </tr>
+                <tr>
+                  <td><label class="label-left">konventionell</label></td>
+                  <td><input form="uxForm" type="radio" name="o2" value="1" required></td>
+                  <td><input form="uxForm" type="radio" name="o2" value="2"></td>
+                  <td><input form="uxForm" type="radio" name="o2" value="3"></td>
+                  <td><input form="uxForm" type="radio" name="o2" value="4"></td>
+                  <td><input form="uxForm" type="radio" name="o2" value="5"></td>
+                  <td><input form="uxForm" type="radio" name="o2" value="6"></td>
+                  <td><input form="uxForm" type="radio" name="o2" value="7"></td>
+                  <td><label class="label-right">originell</label></td>
+                </tr>
+                <tr>
+                  <td><label class="label-left">neuartig</label></td>
+                  <td><input form="uxForm" type="radio" name="o3" value="7"></td>
+                  <td><input form="uxForm" type="radio" name="o3" value="6"></td>
+                  <td><input form="uxForm" type="radio" name="o3" value="5"></td>
+                  <td><input form="uxForm" type="radio" name="o3" value="4" required></td>
+                  <td><input form="uxForm" type="radio" name="o3" value="3"></td>
+                  <td><input form="uxForm" type="radio" name="o3" value="2"></td>
+                  <td><input form="uxForm" type="radio" name="o3" value="1"></td>
+                  <td><label class="label-right">herkömmlich</label></td>
+                </tr>
+                <tr>
+                  <td><label class="label-left">konservativ</label></td>
+                  <td><input form="uxForm" type="radio" name="o4" value="1" required></td>
+                  <td><input form="uxForm" type="radio" name="o4" value="2"></td>
+                  <td><input form="uxForm" type="radio" name="o4" value="3"></td>
+                  <td><input form="uxForm" type="radio" name="o4" value="4"></td>
+                  <td><input form="uxForm" type="radio" name="o4" value="5"></td>
+                  <td><input form="uxForm" type="radio" name="o4" value="6"></td>
+                  <td><input form="uxForm" type="radio" name="o4" value="7"></td>
+                  <td><label class="label-right">innovativ</label></td>
+                </tr>
+
+                <!-- Feedback zur Produkteigenschaft -->
+                <tr><td colspan="9"><label class="statement">Die durch diese Begriffe beschriebene Produkteigenschaft ist für mich</label></td></tr>
+                <tr>
+                  <td><label class="label-left">Völlig unwichtig</label></td>
+                  <td><input form="uxForm" type="radio" name="of" value="1"></td>
+                  <td><input form="uxForm" type="radio" name="of" value="2"></td>
+                  <td><input form="uxForm" type="radio" name="of" value="3"></td>
+                  <td><input form="uxForm" type="radio" name="of" value="4" required></td>
+                  <td><input form="uxForm" type="radio" name="of" value="5"></td>
+                  <td><input form="uxForm" type="radio" name="of" value="6"></td>
+                  <td><input form="uxForm" type="radio" name="of" value="7"></td>
+                  <td><label class="label-right">Sehr wichtig</label></td>
+                </tr>
+                </tbody>
+              </table>
+            </fieldset>
+
+            <fieldset>
+              <hr style="margin-top:20px">
+              <!--<legend>Visuelle Ästhetik</legend>-->
+              <label class="statement">Die visuelle Gestaltung des Produkts empfinde ich als:</label>
+              <table class="likert-table form-element-even">
+                <tbody>
+                <tr>
+                  <td><label class="label-left">hässlich</label></td>
                   <td><input form="uxForm" type="radio" name="a1" value="1"></td>
                   <td><input form="uxForm" type="radio" name="a1" value="2"></td>
                   <td><input form="uxForm" type="radio" name="a1" value="3"></td>
@@ -60,10 +198,10 @@
                   <td><input form="uxForm" type="radio" name="a1" value="5"></td>
                   <td><input form="uxForm" type="radio" name="a1" value="6"></td>
                   <td><input form="uxForm" type="radio" name="a1" value="7"></td>
-                  <td><label class="label-right">erfreulich</label></td>
+                  <td><label class="label-right">schön</label></td>
                 </tr>
                 <tr>
-                  <td><label class="label-left">negativ</label></td>
+                  <td><label class="label-left">stillos</label></td>
                   <td><input form="uxForm" type="radio" name="a2" value="1"></td>
                   <td><input form="uxForm" type="radio" name="a2" value="2"></td>
                   <td><input form="uxForm" type="radio" name="a2" value="3"></td>
@@ -71,10 +209,10 @@
                   <td><input form="uxForm" type="radio" name="a2" value="5"></td>
                   <td><input form="uxForm" type="radio" name="a2" value="6"></td>
                   <td><input form="uxForm" type="radio" name="a2" value="7"></td>
-                  <td><label class="label-right">positiv</label></td>
+                  <td><label class="label-right">stilvoll</label></td>
                 </tr>
                 <tr>
-                  <td><label class="label-left">positiv</label></td>
+                  <td><label class="label-left">ansprechend</label></td>
                   <td><input form="uxForm" type="radio" name="a3" value="7"></td>
                   <td><input form="uxForm" type="radio" name="a3" value="6"></td>
                   <td><input form="uxForm" type="radio" name="a3" value="5"></td>
@@ -82,11 +220,22 @@
                   <td><input form="uxForm" type="radio" name="a3" value="3"></td>
                   <td><input form="uxForm" type="radio" name="a3" value="2"></td>
                   <td><input form="uxForm" type="radio" name="a3" value="1"></td>
-                  <td><label class="label-right">negativ</label></td>
+                  <td><label class="label-right">nicht ansprechend</label></td>
+                </tr>
+                <tr>
+                  <td><label class="label-left">unästhetisch</label></td>
+                  <td><input form="uxForm" type="radio" name="a4" value="1"></td>
+                  <td><input form="uxForm" type="radio" name="a4" value="2"></td>
+                  <td><input form="uxForm" type="radio" name="a4" value="3"></td>
+                  <td><input form="uxForm" type="radio" name="a4" value="4" required></td>
+                  <td><input form="uxForm" type="radio" name="a4" value="5"></td>
+                  <td><input form="uxForm" type="radio" name="a4" value="6"></td>
+                  <td><input form="uxForm" type="radio" name="a4" value="7"></td>
+                  <td><label class="label-right">ästhetisch</label></td>
                 </tr>
 
                 <!-- Feedback zur Produkteigenschaft -->
-                <tr class="table-border-top"><td colspan="9"><label class="statement">Die durch diese Begriffe beschriebene Produkteigenschaft ist für mich</label></td></tr>
+                <tr><td colspan="9"><label class="statement">Die durch diese Begriffe beschriebene Produkteigenschaft ist für mich</label></td></tr>
                 <tr>
                   <td><label class="label-left">Völlig unwichtig</label></td>
                   <td><input form="uxForm" type="radio" name="af" value="1"></td>
@@ -103,55 +252,203 @@
             </fieldset>
 
             <fieldset>
-              <!--<legend>Skala</legend>-->
-              <label class="statement">Insgesamt empfinde ich das Produkt als</label>
-              <table class="likert-table">
+              <hr style="margin-top:20px">
+              <!--<legend>Intuitive Bedienung</legend>-->
+              <label class="statement">Die Bedienung des Produkts wirkt auf mich</label>
+              <table class="likert-table form-element-odd">
                 <tbody>
                 <tr>
-                  <td><label class="label-left">unerfreulich</label></td>
-                  <td><input form="uxForm" type="radio" name="q1" value="1"></td>
-                  <td><input form="uxForm" type="radio" name="q1" value="2"></td>
-                  <td><input form="uxForm" type="radio" name="q1" value="3"></td>
-                  <td><input form="uxForm" type="radio" name="q1" value="4" required></td>
-                  <td><input form="uxForm" type="radio" name="q1" value="5"></td>
-                  <td><input form="uxForm" type="radio" name="q1" value="6"></td>
-                  <td><input form="uxForm" type="radio" name="q1" value="7"></td>
-                  <td><label class="label-right">erfreulich</label></td>
+                  <td><label class="label-left">mühelos</label></td>
+                  <td><input form="uxForm" type="radio" name="b1" value="7"></td>
+                  <td><input form="uxForm" type="radio" name="b1" value="6"></td>
+                  <td><input form="uxForm" type="radio" name="b1" value="5"></td>
+                  <td><input form="uxForm" type="radio" name="b1" value="4" required></td>
+                  <td><input form="uxForm" type="radio" name="b1" value="3"></td>
+                  <td><input form="uxForm" type="radio" name="b1" value="2"></td>
+                  <td><input form="uxForm" type="radio" name="b1" value="1"></td>
+                  <td><label class="label-right">mühevoll</label></td>
                 </tr>
                 <tr>
-                  <td><label class="label-left">negativ</label></td>
-                  <td><input form="uxForm" type="radio" name="q2" value="1" required></td>
-                  <td><input form="uxForm" type="radio" name="q2" value="2"></td>
-                  <td><input form="uxForm" type="radio" name="q2" value="3"></td>
-                  <td><input form="uxForm" type="radio" name="q2" value="4"></td>
-                  <td><input form="uxForm" type="radio" name="q2" value="5"></td>
-                  <td><input form="uxForm" type="radio" name="q2" value="6"></td>
-                  <td><input form="uxForm" type="radio" name="q2" value="7"></td>
-                  <td><label class="label-right">positiv</label></td>
+                  <td><label class="label-left">unlogisch</label></td>
+                  <td><input form="uxForm" type="radio" name="b2" value="1" required></td>
+                  <td><input form="uxForm" type="radio" name="b2" value="2"></td>
+                  <td><input form="uxForm" type="radio" name="b2" value="3"></td>
+                  <td><input form="uxForm" type="radio" name="b2" value="4"></td>
+                  <td><input form="uxForm" type="radio" name="b2" value="5"></td>
+                  <td><input form="uxForm" type="radio" name="b2" value="6"></td>
+                  <td><input form="uxForm" type="radio" name="b2" value="7"></td>
+                  <td><label class="label-right">logisch</label></td>
                 </tr>
                 <tr>
-                  <td><label class="label-left">positiv</label></td>
-                  <td><input type="radio" name="q3" value="7"></td>
-                  <td><input type="radio" name="q3" value="6"></td>
-                  <td><input type="radio" name="q3" value="5"></td>
-                  <td><input type="radio" name="q3" value="4" required></td>
-                  <td><input type="radio" name="q3" value="3"></td>
-                  <td><input type="radio" name="q3" value="2"></td>
-                  <td><input type="radio" name="q3" value="1"></td>
-                  <td><label class="label-right">negativ</label></td>
+                  <td><label class="label-left">einleuchtend</label></td>
+                  <td><input form="uxForm" type="radio" name="b3" value="7"></td>
+                  <td><input form="uxForm" type="radio" name="b3" value="6"></td>
+                  <td><input form="uxForm" type="radio" name="b3" value="5"></td>
+                  <td><input form="uxForm" type="radio" name="b3" value="4" required></td>
+                  <td><input form="uxForm" type="radio" name="b3" value="3"></td>
+                  <td><input form="uxForm" type="radio" name="b3" value="2"></td>
+                  <td><input form="uxForm" type="radio" name="b3" value="1"></td>
+                  <td><label class="label-right">nicht einleuchtend</label></td>
+                </tr>
+                <tr>
+                  <td><label class="label-left">nicht schlüssig</label></td>
+                  <td><input form="uxForm" type="radio" name="b4" value="1" required></td>
+                  <td><input form="uxForm" type="radio" name="b4" value="2"></td>
+                  <td><input form="uxForm" type="radio" name="b4" value="3"></td>
+                  <td><input form="uxForm" type="radio" name="b4" value="4"></td>
+                  <td><input form="uxForm" type="radio" name="b4" value="5"></td>
+                  <td><input form="uxForm" type="radio" name="b4" value="6"></td>
+                  <td><input form="uxForm" type="radio" name="b4" value="7"></td>
+                  <td><label class="label-right">schlüssig</label></td>
                 </tr>
 
                 <!-- Feedback zur Produkteigenschaft -->
-                <tr class="table-border-top"><td colspan="9"><label class="statement">Die durch diese Begriffe beschriebene Produkteigenschaft ist für mich</label></td></tr>
+                <tr><td colspan="9"><label class="statement">Die durch diese Begriffe beschriebene Produkteigenschaft ist für mich</label></td></tr>
                 <tr>
                   <td><label class="label-left">Völlig unwichtig</label></td>
-                  <td><input form="uxForm" type="radio" name="qf" value="1"></td>
-                  <td><input form="uxForm" type="radio" name="qf" value="2"></td>
-                  <td><input form="uxForm" type="radio" name="qf" value="3"></td>
-                  <td><input form="uxForm" type="radio" name="qf" value="4" required></td>
-                  <td><input form="uxForm" type="radio" name="qf" value="5"></td>
-                  <td><input form="uxForm" type="radio" name="qf" value="6"></td>
-                  <td><input form="uxForm" type="radio" name="qf" value="7"></td>
+                  <td><input form="uxForm" type="radio" name="bf" value="1"></td>
+                  <td><input form="uxForm" type="radio" name="bf" value="2"></td>
+                  <td><input form="uxForm" type="radio" name="bf" value="3"></td>
+                  <td><input form="uxForm" type="radio" name="bf" value="4" required></td>
+                  <td><input form="uxForm" type="radio" name="bf" value="5"></td>
+                  <td><input form="uxForm" type="radio" name="bf" value="6"></td>
+                  <td><input form="uxForm" type="radio" name="bf" value="7"></td>
+                  <td><label class="label-right">Sehr wichtig</label></td>
+                </tr>
+                </tbody>
+              </table>
+            </fieldset>
+
+            <fieldset>
+              <hr style="margin-top:20px">
+              <!--<legend>Inhaltsseriosität</legend>-->
+              <label class="statement">Die Informationen und Daten, die mir das Produkt bereitstellt sind</label>
+              <table class="likert-table form-element-even">
+                <tbody>
+                <tr>
+                  <td><label class="label-left">nutzlos</label></td>
+                  <td><input form="uxForm" type="radio" name="is1" value="1"></td>
+                  <td><input form="uxForm" type="radio" name="is1" value="2"></td>
+                  <td><input form="uxForm" type="radio" name="is1" value="3"></td>
+                  <td><input form="uxForm" type="radio" name="is1" value="4" required></td>
+                  <td><input form="uxForm" type="radio" name="is1" value="5"></td>
+                  <td><input form="uxForm" type="radio" name="is1" value="6"></td>
+                  <td><input form="uxForm" type="radio" name="is1" value="7"></td>
+                  <td><label class="label-right">nützlich</label></td>
+                </tr>
+                <tr>
+                  <td><label class="label-left">unglaubwürdig</label></td>
+                  <td><input form="uxForm" type="radio" name="is2" value="1"></td>
+                  <td><input form="uxForm" type="radio" name="is2" value="2"></td>
+                  <td><input form="uxForm" type="radio" name="is2" value="3"></td>
+                  <td><input form="uxForm" type="radio" name="is2" value="4" required></td>
+                  <td><input form="uxForm" type="radio" name="is2" value="5"></td>
+                  <td><input form="uxForm" type="radio" name="is2" value="6"></td>
+                  <td><input form="uxForm" type="radio" name="is2" value="7"></td>
+                  <td><label class="label-right">glaubwürdig</label></td>
+                </tr>
+                <tr>
+                  <td><label class="label-left">seriös</label></td>
+                  <td><input form="uxForm" type="radio" name="is3" value="7"></td>
+                  <td><input form="uxForm" type="radio" name="is3" value="6"></td>
+                  <td><input form="uxForm" type="radio" name="is3" value="5"></td>
+                  <td><input form="uxForm" type="radio" name="is3" value="4" required></td>
+                  <td><input form="uxForm" type="radio" name="is3" value="3"></td>
+                  <td><input form="uxForm" type="radio" name="is3" value="2"></td>
+                  <td><input form="uxForm" type="radio" name="is3" value="1"></td>
+                  <td><label class="label-right">unseriös</label></td>
+                </tr>
+                <tr>
+                  <td><label class="label-left">ungenau</label></td>
+                  <td><input form="uxForm" type="radio" name="is4" value="1"></td>
+                  <td><input form="uxForm" type="radio" name="is4" value="2"></td>
+                  <td><input form="uxForm" type="radio" name="is4" value="3"></td>
+                  <td><input form="uxForm" type="radio" name="is4" value="4" required></td>
+                  <td><input form="uxForm" type="radio" name="is4" value="5"></td>
+                  <td><input form="uxForm" type="radio" name="is4" value="6"></td>
+                  <td><input form="uxForm" type="radio" name="is4" value="7"></td>
+                  <td><label class="label-right">genau</label></td>
+                </tr>
+
+                <!-- Feedback zur Produkteigenschaft -->
+                <tr><td colspan="9"><label class="statement">Die durch diese Begriffe beschriebene Produkteigenschaft ist für mich</label></td></tr>
+                <tr>
+                  <td><label class="label-left">Völlig unwichtig</label></td>
+                  <td><input form="uxForm" type="radio" name="isf" value="1"></td>
+                  <td><input form="uxForm" type="radio" name="isf" value="2"></td>
+                  <td><input form="uxForm" type="radio" name="isf" value="3"></td>
+                  <td><input form="uxForm" type="radio" name="isf" value="4" required></td>
+                  <td><input form="uxForm" type="radio" name="isf" value="5"></td>
+                  <td><input form="uxForm" type="radio" name="isf" value="6"></td>
+                  <td><input form="uxForm" type="radio" name="isf" value="7"></td>
+                  <td><label class="label-right">Sehr wichtig</label></td>
+                </tr>
+                </tbody>
+              </table>
+            </fieldset>
+
+            <fieldset>
+              <hr style="margin-top:20px">
+              <!--<legend>Inhaltsqualität</legend>-->
+              <label class="statement">Die Informationen und Daten, die mir das Produkt bereitstellt sind</label>
+              <table class="likert-table form-element-odd">
+                <tbody>
+                <tr>
+                  <td><label class="label-left">aktuell</label></td>
+                  <td><input form="uxForm" type="radio" name="iq1" value="7"></td>
+                  <td><input form="uxForm" type="radio" name="iq1" value="6"></td>
+                  <td><input form="uxForm" type="radio" name="iq1" value="5"></td>
+                  <td><input form="uxForm" type="radio" name="iq1" value="4" required></td>
+                  <td><input form="uxForm" type="radio" name="iq1" value="3"></td>
+                  <td><input form="uxForm" type="radio" name="iq1" value="2"></td>
+                  <td><input form="uxForm" type="radio" name="iq1" value="1"></td>
+                  <td><label class="label-right">veraltet</label></td>
+                </tr>
+                <tr>
+                  <td><label class="label-left">uninteressant</label></td>
+                  <td><input form="uxForm" type="radio" name="iq2" value="1" required></td>
+                  <td><input form="uxForm" type="radio" name="iq2" value="2"></td>
+                  <td><input form="uxForm" type="radio" name="iq2" value="3"></td>
+                  <td><input form="uxForm" type="radio" name="iq2" value="4"></td>
+                  <td><input form="uxForm" type="radio" name="iq2" value="5"></td>
+                  <td><input form="uxForm" type="radio" name="iq2" value="6"></td>
+                  <td><input form="uxForm" type="radio" name="iq2" value="7"></td>
+                  <td><label class="label-right">interessant</label></td>
+                </tr>
+                <tr>
+                  <td><label class="label-left">gut aufbereitet</label></td>
+                  <td><input form="uxForm" type="radio" name="iq3" value="7"></td>
+                  <td><input form="uxForm" type="radio" name="iq3" value="6"></td>
+                  <td><input form="uxForm" type="radio" name="iq3" value="5"></td>
+                  <td><input form="uxForm" type="radio" name="iq3" value="4" required></td>
+                  <td><input form="uxForm" type="radio" name="iq3" value="3"></td>
+                  <td><input form="uxForm" type="radio" name="iq3" value="2"></td>
+                  <td><input form="uxForm" type="radio" name="iq3" value="1"></td>
+                  <td><label class="label-right">schlecht aufbereitet</label></td>
+                </tr>
+                <tr>
+                  <td><label class="label-left">unverständlich</label></td>
+                  <td><input form="uxForm" type="radio" name="iq4" value="1" required></td>
+                  <td><input form="uxForm" type="radio" name="iq4" value="2"></td>
+                  <td><input form="uxForm" type="radio" name="iq4" value="3"></td>
+                  <td><input form="uxForm" type="radio" name="iq4" value="4"></td>
+                  <td><input form="uxForm" type="radio" name="iq4" value="5"></td>
+                  <td><input form="uxForm" type="radio" name="iq4" value="6"></td>
+                  <td><input form="uxForm" type="radio" name="iq4" value="7"></td>
+                  <td><label class="label-right">verständlich</label></td>
+                </tr>
+
+                <!-- Feedback zur Produkteigenschaft -->
+                <tr><td colspan="9"><label class="statement">Die durch diese Begriffe beschriebene Produkteigenschaft ist für mich</label></td></tr>
+                <tr>
+                  <td><label class="label-left">Völlig unwichtig</label></td>
+                  <td><input form="uxForm" type="radio" name="iqf" value="1"></td>
+                  <td><input form="uxForm" type="radio" name="iqf" value="2"></td>
+                  <td><input form="uxForm" type="radio" name="iqf" value="3"></td>
+                  <td><input form="uxForm" type="radio" name="iqf" value="4" required></td>
+                  <td><input form="uxForm" type="radio" name="iqf" value="5"></td>
+                  <td><input form="uxForm" type="radio" name="iqf" value="6"></td>
+                  <td><input form="uxForm" type="radio" name="iqf" value="7"></td>
                   <td><label class="label-right">Sehr wichtig</label></td>
                 </tr>
                 </tbody>
