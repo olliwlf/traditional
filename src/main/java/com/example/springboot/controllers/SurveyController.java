@@ -34,13 +34,24 @@ public class SurveyController {
 	@RequestMapping(value = "/", method = RequestMethod.GET)
 	public String showStartPage(Model model) {
 		model.addAttribute("appName", appName);
+		return "startPageS";
+	}
+
+	@RequestMapping(value = "/t", method = RequestMethod.GET)
+	public String showStartPageT(Model model) {
+		model.addAttribute("appName", appName);
 		return "startPageT";
+	}
+
+	@RequestMapping(value = "/s", method = RequestMethod.GET)
+	public String showStartPageS(Model model) {
+		model.addAttribute("appName", appName);
+		return "startPageS";
 	}
 
 	@RequestMapping(value = "/saveData", method = RequestMethod.POST)
 	public String saveData(@RequestParam(value = "age", required = false) Integer age,
 						   @RequestParam("testGroup") Integer testGroup,
-						   @RequestParam(value = "testGroup", required = false) Integer priorExperience,
 						   @RequestParam(value = "s1") Integer stimulation1,
 						   @RequestParam(value = "s2") Integer stimulation2,
 						   @RequestParam(value = "s3") Integer stimulation3,
