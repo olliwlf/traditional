@@ -97,9 +97,42 @@ public class SurveyController {
 		}
 
 		// save user experience data to database
-		currentPerson.setValue1(stimulation1);
-		currentPerson.setValue2(stimulation2);
-		currentPerson.setValue3(stimulation3);
+		// - Stimulation
+		currentPerson.setStimulation1LangweiligSpannend(stimulation1);
+		currentPerson.setStimulation2UninteressantInteressant(stimulation2);
+		currentPerson.setStimulation3EinschlaeferndAktivierend(stimulation3);
+		currentPerson.setStimulation4MinderwertigWertvoll(stimulation4);
+		currentPerson.setStimulationFeedback(stimulationFeedback);
+		// - Originalität
+		currentPerson.setOriginalitaet1PhantasielosKreativ(originalitat1);
+		currentPerson.setOriginalitaet2KonventionellOriginell(originalitat2);
+		currentPerson.setOriginalitaet3HerkoemmlichNeuartig(originalitat3);
+		currentPerson.setOriginalitaet4KonservativInnovativ(originalitat4);
+		currentPerson.setOriginalitaetFeedback(originalitatFeedback);
+		// - Visuelle Ästhetik
+		currentPerson.setVisuelleAesthetik1HaesslichSchoen(visuelleAesthetik1);
+		currentPerson.setVisuelleAesthetik2StillosStilvoll(visuelleAesthetik2);
+		currentPerson.setVisuelleAesthetik3NichtAnsprechendAnsprechend(visuelleAesthetik3);
+		currentPerson.setVisuelleAesthetik4UnaesthetischAesthetisch(visuelleAesthetik4);
+		currentPerson.setVisuelleAesthetikFeedback(visuelleAesthetikFeedback);
+		// - Intuitive Bedienung
+		currentPerson.setIntuitiveUsability1MuehevollMuehelos(intuitiveBedienung1);
+		currentPerson.setIntuitiveUsability2UnlogischLogisch(intuitiveBedienung2);
+		currentPerson.setIntuitiveUsability3NichtEinleuchtendEinleuchtend(intuitiveBedienung3);
+		currentPerson.setIntuitiveUsability4NichtSchluessigSchluessig(intuitiveBedienung4);
+		currentPerson.setIntuitiveUsabilityFeedback(intuitiveBedienungFeedback);
+		// - Inhaltsseriösität
+		currentPerson.setInhaltsserioesitaet1NutzlosNuetzlich(inhaltsseriositat1);
+		currentPerson.setInhaltsserioesitaet2UnglaubwuerdigGlaubwuerdig(inhaltsseriositat2);
+		currentPerson.setInhaltsserioesitaet3UnserioesSerioes(inhaltsseriositat3);
+		currentPerson.setInhaltsserioesitaet4UngenauGenau(inhaltsseriositat4);
+		currentPerson.setInhaltsserioesitaetFeedback(inhaltsseriositatFeedback);
+		// - Inhaltsqualität
+		currentPerson.setInhaltsqualitaet1VeraltetAktuell(inhaltsqualitat1);
+		currentPerson.setInhaltsqualitaet2UninteressantInteressant(inhaltsqualitat2);
+		currentPerson.setInhaltsqualitaet3SchlechtAufbereitetGutAufbereitet(inhaltsqualitat3);
+		currentPerson.setInhaltsqualitaet4UnverstaendlichVerstaendlich(inhaltsqualitat4);
+		currentPerson.setInhaltsqualitaetFeedback(inhaltsqualitatFeedback);
 
 		Person newPerson = personRepository.saveAndFlush(currentPerson);
 

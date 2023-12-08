@@ -16532,9 +16532,11 @@
     <database id="5510" parent="1" name="studydb">
       <Current>1</Current>
       <Fingerprint>5.45241/35C4676B-75CC-4240-976F-C51E8507EBAD@ux-masterthesis</Fingerprint>
-      <Grants>5|database||1|connect|G</Grants>
+      <Grants>5|database||1|connect|G
+5|database||5|connect|G
+5|database||5|control|G</Grants>
       <ObjectId>5</ObjectId>
-      <PermissionsCheckSum>1059020366</PermissionsCheckSum>
+      <PermissionsCheckSum>4250800875</PermissionsCheckSum>
       <CollationName>SQL_Latin1_General_CP1_CI_AS</CollationName>
     </database>
     <database id="5511" parent="1" name="master">
@@ -16672,215 +16674,323 @@
       <AuthType>none</AuthType>
       <ObjectId>4</ObjectId>
     </role>
-    <schema id="5537" parent="5510" name="INFORMATION_SCHEMA">
+    <role id="5537" parent="5510" name="azureUserOw">
+      <DefaultSchema>dbo</DefaultSchema>
+      <ObjectId>5</ObjectId>
+    </role>
+    <schema id="5538" parent="5510" name="INFORMATION_SCHEMA">
       <ObjectId>3</ObjectId>
     </schema>
-    <schema id="5538" parent="5510" name="db_accessadmin">
+    <schema id="5539" parent="5510" name="db_accessadmin">
       <ObjectId>16385</ObjectId>
     </schema>
-    <schema id="5539" parent="5510" name="db_backupoperator">
+    <schema id="5540" parent="5510" name="db_backupoperator">
       <ObjectId>16389</ObjectId>
     </schema>
-    <schema id="5540" parent="5510" name="db_datareader">
+    <schema id="5541" parent="5510" name="db_datareader">
       <ObjectId>16390</ObjectId>
     </schema>
-    <schema id="5541" parent="5510" name="db_datawriter">
+    <schema id="5542" parent="5510" name="db_datawriter">
       <ObjectId>16391</ObjectId>
     </schema>
-    <schema id="5542" parent="5510" name="db_ddladmin">
+    <schema id="5543" parent="5510" name="db_ddladmin">
       <ObjectId>16387</ObjectId>
     </schema>
-    <schema id="5543" parent="5510" name="db_denydatareader">
+    <schema id="5544" parent="5510" name="db_denydatareader">
       <ObjectId>16392</ObjectId>
     </schema>
-    <schema id="5544" parent="5510" name="db_denydatawriter">
+    <schema id="5545" parent="5510" name="db_denydatawriter">
       <ObjectId>16393</ObjectId>
     </schema>
-    <schema id="5545" parent="5510" name="db_owner">
+    <schema id="5546" parent="5510" name="db_owner">
       <ObjectId>16384</ObjectId>
     </schema>
-    <schema id="5546" parent="5510" name="db_securityadmin">
+    <schema id="5547" parent="5510" name="db_securityadmin">
       <ObjectId>16386</ObjectId>
     </schema>
-    <schema id="5547" parent="5510" name="dbo">
+    <schema id="5548" parent="5510" name="dbo">
       <Current>1</Current>
-      <IntrospectionTimestamp>2023-11-23.20:12:50.410</IntrospectionTimestamp>
-      <LocalIntrospectionTimestamp>2023-11-23.19:12:50</LocalIntrospectionTimestamp>
+      <IntrospectionTimestamp>2023-12-08.22:28:15.923</IntrospectionTimestamp>
+      <LocalIntrospectionTimestamp>2023-12-08.21:28:15</LocalIntrospectionTimestamp>
       <ObjectId>1</ObjectId>
     </schema>
-    <schema id="5548" parent="5510" name="guest">
+    <schema id="5549" parent="5510" name="guest">
       <ObjectId>2</ObjectId>
     </schema>
-    <schema id="5549" parent="5510" name="sys">
+    <schema id="5550" parent="5510" name="sys">
       <ObjectId>4</ObjectId>
     </schema>
-    <sequence id="5550" parent="5547" name="persons_seq">
-      <CreatedTimestamp>2023-11-20.20:19:19.267</CreatedTimestamp>
+    <sequence id="5551" parent="5548" name="persons_seq">
+      <CreatedTimestamp>2023-12-08.22:01:43.950</CreatedTimestamp>
       <DasType>bigint|0s</DasType>
-      <ModifiedTimestamp>2023-11-20.20:19:19.267</ModifiedTimestamp>
-      <ObjectId>1941581955</ObjectId>
-      <SequenceIdentity>null(351)+50</SequenceIdentity>
+      <ModifiedTimestamp>2023-12-08.22:01:43.950</ModifiedTimestamp>
+      <ObjectId>18099105</ObjectId>
+      <SequenceIdentity>null(101)+50</SequenceIdentity>
       <StartValue>1</StartValue>
       <UnderlyingDasType>bigint|0s</UnderlyingDasType>
     </sequence>
-    <table id="5551" parent="5547" name="education_directions">
-      <CreatedTimestamp>2023-11-20.20:19:19.163</CreatedTimestamp>
-      <ModifiedTimestamp>2023-11-20.20:19:19.347</ModifiedTimestamp>
-      <ObjectId>1845581613</ObjectId>
+    <table id="5552" parent="5548" name="education_directions">
+      <CreatedTimestamp>2023-12-08.22:01:43.990</CreatedTimestamp>
+      <ModifiedTimestamp>2023-12-08.22:01:44.227</ModifiedTimestamp>
+      <ObjectId>34099162</ObjectId>
     </table>
-    <table id="5552" parent="5547" name="educations">
-      <CreatedTimestamp>2023-11-20.20:19:19.197</CreatedTimestamp>
-      <ModifiedTimestamp>2023-11-20.20:19:19.310</ModifiedTimestamp>
-      <ObjectId>1877581727</ObjectId>
+    <table id="5553" parent="5548" name="educations">
+      <CreatedTimestamp>2023-12-08.22:01:44.123</CreatedTimestamp>
+      <ModifiedTimestamp>2023-12-08.22:01:44.197</ModifiedTimestamp>
+      <ObjectId>66099276</ObjectId>
     </table>
-    <table id="5553" parent="5547" name="persons">
-      <CreatedTimestamp>2023-11-20.20:19:19.230</CreatedTimestamp>
-      <ModifiedTimestamp>2023-11-20.20:19:19.347</ModifiedTimestamp>
-      <ObjectId>1909581841</ObjectId>
+    <table id="5554" parent="5548" name="persons">
+      <CreatedTimestamp>2023-12-08.22:01:44.160</CreatedTimestamp>
+      <ModifiedTimestamp>2023-12-08.22:32:13.727</ModifiedTimestamp>
+      <ObjectId>98099390</ObjectId>
     </table>
-    <column id="5554" parent="5551" name="id">
+    <column id="5555" parent="5552" name="created_at">
+      <DasType>datetime2(6 digit)|0s</DasType>
+      <Position>1</Position>
+    </column>
+    <column id="5556" parent="5552" name="id">
       <DasType>bigint|0s</DasType>
       <NotNull>1</NotNull>
-      <Position>1</Position>
+      <Position>2</Position>
       <SequenceIdentity>1(16)</SequenceIdentity>
     </column>
-    <column id="5555" parent="5551" name="created_at">
-      <DasType>datetime2(6 digit)|0s</DasType>
-      <Position>2</Position>
-    </column>
-    <column id="5556" parent="5551" name="modified_at">
+    <column id="5557" parent="5552" name="modified_at">
       <DasType>datetime2(6 digit)|0s</DasType>
       <Position>3</Position>
     </column>
-    <column id="5557" parent="5551" name="title">
+    <column id="5558" parent="5552" name="title">
       <DasType>varchar(255 char)|0s</DasType>
       <Position>4</Position>
     </column>
-    <index id="5558" parent="5551" name="PK__educatio__3213E83F9E23970E">
+    <index id="5559" parent="5552" name="PK__educatio__3213E83F11CDF919">
       <Clustering>1</Clustering>
       <ColNames>id</ColNames>
       <NameSurrogate>1</NameSurrogate>
       <Position>1</Position>
       <Unique>1</Unique>
     </index>
-    <key id="5559" parent="5551" name="PK__educatio__3213E83F9E23970E">
-      <CreatedTimestamp>2023-11-20.20:19:19.167</CreatedTimestamp>
-      <ModifiedTimestamp>2023-11-20.20:19:19.167</ModifiedTimestamp>
+    <key id="5560" parent="5552" name="PK__educatio__3213E83F11CDF919">
+      <CreatedTimestamp>2023-12-08.22:01:43.997</CreatedTimestamp>
+      <ModifiedTimestamp>2023-12-08.22:01:43.997</ModifiedTimestamp>
       <NameSurrogate>1</NameSurrogate>
-      <ObjectId>1861581670</ObjectId>
+      <ObjectId>50099219</ObjectId>
       <Primary>1</Primary>
-      <UnderlyingIndexName>PK__educatio__3213E83F9E23970E</UnderlyingIndexName>
+      <UnderlyingIndexName>PK__educatio__3213E83F11CDF919</UnderlyingIndexName>
     </key>
-    <column id="5560" parent="5552" name="id">
+    <column id="5561" parent="5553" name="created_at">
+      <DasType>datetime2(6 digit)|0s</DasType>
+      <Position>1</Position>
+    </column>
+    <column id="5562" parent="5553" name="id">
       <DasType>bigint|0s</DasType>
       <NotNull>1</NotNull>
-      <Position>1</Position>
+      <Position>2</Position>
       <SequenceIdentity>1(7)</SequenceIdentity>
     </column>
-    <column id="5561" parent="5552" name="created_at">
-      <DasType>datetime2(6 digit)|0s</DasType>
-      <Position>2</Position>
-    </column>
-    <column id="5562" parent="5552" name="modified_at">
+    <column id="5563" parent="5553" name="modified_at">
       <DasType>datetime2(6 digit)|0s</DasType>
       <Position>3</Position>
     </column>
-    <column id="5563" parent="5552" name="title">
+    <column id="5564" parent="5553" name="title">
       <DasType>varchar(255 char)|0s</DasType>
       <Position>4</Position>
     </column>
-    <index id="5564" parent="5552" name="PK__educatio__3213E83F269642E3">
+    <index id="5565" parent="5553" name="PK__educatio__3213E83FFAD7154F">
       <Clustering>1</Clustering>
       <ColNames>id</ColNames>
       <NameSurrogate>1</NameSurrogate>
       <Position>1</Position>
       <Unique>1</Unique>
     </index>
-    <key id="5565" parent="5552" name="PK__educatio__3213E83F269642E3">
-      <CreatedTimestamp>2023-11-20.20:19:19.197</CreatedTimestamp>
-      <ModifiedTimestamp>2023-11-20.20:19:19.197</ModifiedTimestamp>
+    <key id="5566" parent="5553" name="PK__educatio__3213E83FFAD7154F">
+      <CreatedTimestamp>2023-12-08.22:01:44.123</CreatedTimestamp>
+      <ModifiedTimestamp>2023-12-08.22:01:44.123</ModifiedTimestamp>
       <NameSurrogate>1</NameSurrogate>
-      <ObjectId>1893581784</ObjectId>
+      <ObjectId>82099333</ObjectId>
       <Primary>1</Primary>
-      <UnderlyingIndexName>PK__educatio__3213E83F269642E3</UnderlyingIndexName>
+      <UnderlyingIndexName>PK__educatio__3213E83FFAD7154F</UnderlyingIndexName>
     </key>
-    <column id="5566" parent="5553" name="id">
-      <DasType>bigint|0s</DasType>
-      <NotNull>1</NotNull>
+    <column id="5567" parent="5554" name="age">
+      <DasType>int|0s</DasType>
       <Position>1</Position>
     </column>
-    <column id="5567" parent="5553" name="age">
+    <column id="5568" parent="5554" name="inhaltsqualitaet1_veraltet_aktuell">
       <DasType>int|0s</DasType>
       <Position>2</Position>
     </column>
-    <column id="5568" parent="5553" name="created_at">
-      <DasType>datetime2(6 digit)|0s</DasType>
+    <column id="5569" parent="5554" name="inhaltsqualitaet2_uninteressant_interessant">
+      <DasType>int|0s</DasType>
       <Position>3</Position>
     </column>
-    <column id="5569" parent="5553" name="modified_at">
-      <DasType>datetime2(6 digit)|0s</DasType>
+    <column id="5570" parent="5554" name="inhaltsqualitaet3_schlecht_aufbereitet_gut_aufbereitet">
+      <DasType>int|0s</DasType>
       <Position>4</Position>
     </column>
-    <column id="5570" parent="5553" name="prior_scrollytelling_experience">
-      <DasType>bit|0s</DasType>
+    <column id="5571" parent="5554" name="inhaltsqualitaet4_unverstaendlich_verstaendlich">
+      <DasType>int|0s</DasType>
       <Position>5</Position>
     </column>
-    <column id="5571" parent="5553" name="test_group">
+    <column id="5572" parent="5554" name="inhaltsqualitaet_feedback">
       <DasType>int|0s</DasType>
       <Position>6</Position>
     </column>
-    <column id="5572" parent="5553" name="value1">
+    <column id="5573" parent="5554" name="inhaltsserioesitaet1_nutzlos_nuetzlich">
       <DasType>int|0s</DasType>
       <Position>7</Position>
     </column>
-    <column id="5573" parent="5553" name="value2">
+    <column id="5574" parent="5554" name="inhaltsserioesitaet2unglaubwuerdig_glaubwuerdig">
       <DasType>int|0s</DasType>
       <Position>8</Position>
     </column>
-    <column id="5574" parent="5553" name="value3">
+    <column id="5575" parent="5554" name="inhaltsserioesitaet3_unserioes_serioes">
       <DasType>int|0s</DasType>
       <Position>9</Position>
     </column>
-    <column id="5575" parent="5553" name="education_id">
-      <DasType>bigint|0s</DasType>
+    <column id="5576" parent="5554" name="inhaltsserioesitaet4_ungenau_genau">
+      <DasType>int|0s</DasType>
       <Position>10</Position>
     </column>
-    <column id="5576" parent="5553" name="education_direction_id">
-      <DasType>bigint|0s</DasType>
+    <column id="5577" parent="5554" name="inhaltsserioesitaet_feedback">
+      <DasType>int|0s</DasType>
       <Position>11</Position>
     </column>
-    <foreign-key id="5577" parent="5553" name="FK3xm9o6kxlbym4imopbp2ates3">
-      <ColNames>education_id</ColNames>
-      <CreatedTimestamp>2023-11-20.20:19:19.307</CreatedTimestamp>
-      <ModifiedTimestamp>2023-11-20.20:19:19.307</ModifiedTimestamp>
-      <ObjectId>1957582012</ObjectId>
-      <RefColNames>id</RefColNames>
-      <RefTableId>1877581727</RefTableId>
-      <RefTableName>educations</RefTableName>
-    </foreign-key>
-    <foreign-key id="5578" parent="5553" name="FK2tnpfq6p816y0rjvf9j3j7xd3">
+    <column id="5578" parent="5554" name="intuitive_usability1_muehevoll_muehelos">
+      <DasType>int|0s</DasType>
+      <Position>12</Position>
+    </column>
+    <column id="5579" parent="5554" name="intuitive_usability2_unlogisch_logisch">
+      <DasType>int|0s</DasType>
+      <Position>13</Position>
+    </column>
+    <column id="5580" parent="5554" name="intuitive_usability3_nicht_einleuchtend_einleuchtend">
+      <DasType>int|0s</DasType>
+      <Position>14</Position>
+    </column>
+    <column id="5581" parent="5554" name="intuitive_usability4_nicht_schluessig_schluessig">
+      <DasType>int|0s</DasType>
+      <Position>15</Position>
+    </column>
+    <column id="5582" parent="5554" name="intuitive_usability_feedback">
+      <DasType>int|0s</DasType>
+      <Position>16</Position>
+    </column>
+    <column id="5583" parent="5554" name="originalitaet1_phantasielos_kreativ">
+      <DasType>int|0s</DasType>
+      <Position>17</Position>
+    </column>
+    <column id="5584" parent="5554" name="originalitaet2_konventionell_originell">
+      <DasType>int|0s</DasType>
+      <Position>18</Position>
+    </column>
+    <column id="5585" parent="5554" name="originalitaet3_herkoemmlich_neuartig">
+      <DasType>int|0s</DasType>
+      <Position>19</Position>
+    </column>
+    <column id="5586" parent="5554" name="originalitaet4_konservativ_innovativ">
+      <DasType>int|0s</DasType>
+      <Position>20</Position>
+    </column>
+    <column id="5587" parent="5554" name="originalitaet_feedback">
+      <DasType>int|0s</DasType>
+      <Position>21</Position>
+    </column>
+    <column id="5588" parent="5554" name="stimulation1_langweilig_spannend">
+      <DasType>int|0s</DasType>
+      <Position>23</Position>
+    </column>
+    <column id="5589" parent="5554" name="stimulation2_uninteressant_interessant">
+      <DasType>int|0s</DasType>
+      <Position>24</Position>
+    </column>
+    <column id="5590" parent="5554" name="stimulation3_einschlaefernd_aktivierend">
+      <DasType>int|0s</DasType>
+      <Position>25</Position>
+    </column>
+    <column id="5591" parent="5554" name="stimulation4_minderwertig_wertvoll">
+      <DasType>int|0s</DasType>
+      <Position>26</Position>
+    </column>
+    <column id="5592" parent="5554" name="stimulation_feedback">
+      <DasType>int|0s</DasType>
+      <Position>27</Position>
+    </column>
+    <column id="5593" parent="5554" name="test_group">
+      <DasType>int|0s</DasType>
+      <Position>28</Position>
+    </column>
+    <column id="5594" parent="5554" name="visuelle_aesthetik1_haesslich_schoen">
+      <DasType>int|0s</DasType>
+      <Position>29</Position>
+    </column>
+    <column id="5595" parent="5554" name="visuelle_aesthetik2_stillos_stilvoll">
+      <DasType>int|0s</DasType>
+      <Position>30</Position>
+    </column>
+    <column id="5596" parent="5554" name="visuelle_aesthetik3_nicht_ansprechend_ansprechend">
+      <DasType>int|0s</DasType>
+      <Position>31</Position>
+    </column>
+    <column id="5597" parent="5554" name="visuelle_aesthetik4_unaesthetisch_aesthetisch">
+      <DasType>int|0s</DasType>
+      <Position>32</Position>
+    </column>
+    <column id="5598" parent="5554" name="visuelle_aesthetik_feedback">
+      <DasType>int|0s</DasType>
+      <Position>33</Position>
+    </column>
+    <column id="5599" parent="5554" name="created_at">
+      <DasType>datetime2(6 digit)|0s</DasType>
+      <Position>34</Position>
+    </column>
+    <column id="5600" parent="5554" name="education_direction_id">
+      <DasType>bigint|0s</DasType>
+      <Position>35</Position>
+    </column>
+    <column id="5601" parent="5554" name="education_id">
+      <DasType>bigint|0s</DasType>
+      <Position>36</Position>
+    </column>
+    <column id="5602" parent="5554" name="id">
+      <DasType>bigint|0s</DasType>
+      <NotNull>1</NotNull>
+      <Position>37</Position>
+    </column>
+    <column id="5603" parent="5554" name="modified_at">
+      <DasType>datetime2(6 digit)|0s</DasType>
+      <Position>38</Position>
+    </column>
+    <foreign-key id="5604" parent="5554" name="FK2tnpfq6p816y0rjvf9j3j7xd3">
       <ColNames>education_direction_id</ColNames>
-      <CreatedTimestamp>2023-11-20.20:19:19.347</CreatedTimestamp>
-      <ModifiedTimestamp>2023-11-20.20:19:19.347</ModifiedTimestamp>
-      <ObjectId>1973582069</ObjectId>
+      <CreatedTimestamp>2023-12-08.22:01:44.227</CreatedTimestamp>
+      <ModifiedTimestamp>2023-12-08.22:01:44.227</ModifiedTimestamp>
+      <ObjectId>146099561</ObjectId>
       <RefColNames>id</RefColNames>
-      <RefTableId>1845581613</RefTableId>
+      <RefTableId>34099162</RefTableId>
       <RefTableName>education_directions</RefTableName>
     </foreign-key>
-    <index id="5579" parent="5553" name="PK__persons__3213E83F3F23D2F9">
+    <foreign-key id="5605" parent="5554" name="FK3xm9o6kxlbym4imopbp2ates3">
+      <ColNames>education_id</ColNames>
+      <CreatedTimestamp>2023-12-08.22:01:44.197</CreatedTimestamp>
+      <ModifiedTimestamp>2023-12-08.22:01:44.197</ModifiedTimestamp>
+      <ObjectId>130099504</ObjectId>
+      <RefColNames>id</RefColNames>
+      <RefTableId>66099276</RefTableId>
+      <RefTableName>educations</RefTableName>
+    </foreign-key>
+    <index id="5606" parent="5554" name="PK__persons__3213E83F54D0D641">
       <Clustering>1</Clustering>
       <ColNames>id</ColNames>
       <NameSurrogate>1</NameSurrogate>
       <Position>1</Position>
       <Unique>1</Unique>
     </index>
-    <key id="5580" parent="5553" name="PK__persons__3213E83F3F23D2F9">
-      <CreatedTimestamp>2023-11-20.20:19:19.230</CreatedTimestamp>
-      <ModifiedTimestamp>2023-11-20.20:19:19.230</ModifiedTimestamp>
+    <key id="5607" parent="5554" name="PK__persons__3213E83F54D0D641">
+      <CreatedTimestamp>2023-12-08.22:01:44.163</CreatedTimestamp>
+      <ModifiedTimestamp>2023-12-08.22:01:44.163</ModifiedTimestamp>
       <NameSurrogate>1</NameSurrogate>
-      <ObjectId>1925581898</ObjectId>
+      <ObjectId>114099447</ObjectId>
       <Primary>1</Primary>
-      <UnderlyingIndexName>PK__persons__3213E83F3F23D2F9</UnderlyingIndexName>
+      <UnderlyingIndexName>PK__persons__3213E83F54D0D641</UnderlyingIndexName>
     </key>
   </database-model>
 </dataSource>

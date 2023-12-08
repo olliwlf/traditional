@@ -8,7 +8,7 @@
   <script type="text/javascript" th:src="@{webjars/bootstrap/5.3.2/js/bootstrap.min.js}"></script>
   <script type="text/javascript" th:src="@{webjars/jquery/3.7.1/jquery.min.js}"></script>
 
-  <title>Umfrage</title>
+  <title>Fragebogen zur Studie</title>
 </head>
 <body>
 <div class="col-md-12">
@@ -45,7 +45,8 @@
           <!-- Test auf Manipulation -->
           <div class="manipulation-check" style="margin-top: 1rem;">
             <fieldset>
-              <h3>Inhalt der Webseite</h3>
+              <!-- <h3>Inhalt der Webseite</h3> -->
+              <h3>Teil 1 von 3</h3>
               <p>Beschreibe bitte in <b>einem kurzen Satz</b> den Inhalt der Webseite.</p>
               <div class="form-element-odd">
                 <input form="uxForm" type="text" name="manipulationCheck" style="width: 100%;"
@@ -55,10 +56,11 @@
           </div>
 
           <div class="ux-data" style="margin-top: 1rem;">
-            <h3>Wahrnehmung der Webseite</h3>
-            <p style="margin-bottom: 20px">Bitte denke an deine Interaktion mit der Webseite zurück und wähle die Aussagen, die deine Erfahrungen auf der Webseite passend beschreiben. Entscheide möglichst spontan! Bitte kreuze immer eine Antwort an, auch wenn du dir unsicher bist oder findest, dass ein Begriffspaar nicht so gut passt.
+            <!--<h3>Wahrnehmung der Webseite</h3> -->
+            <h3>Teil 2 von 3</h3>
+            <p style="margin-bottom: 20px">Bitte denke nun an deine Interaktion mit der Webseite zurück und wähle die Aussagen, die deine Erfahrungen auf der Webseite passend beschreiben. Entscheide möglichst spontan! Bitte kreuze immer eine Antwort an, auch wenn du dir unsicher bist oder findest, dass ein Begriffspaar nicht so gut passt.
                   Unter jeder Gruppe kannst du noch angeben, wie wichtig dieser Aspekt für deine Gesamtbewertung ist.
-                  Es gibt keine „richtige“ oder „falsche“ Antwort. Nur deine persönliche Meinung zählt!
+                  Denk daran, dass es keine richtigen oder falschen Antworten gibt. Ich bin einfach nur an deinen Eindrücken und Gedanken interessiert.
             </p>
 
             <fieldset>
@@ -237,10 +239,10 @@
                 </tr>
                 <tr>
                   <td><label class="label-left">konservativ</label></td>
-                  <td><input form="uxForm" type="radio" name="o4" value="1" required></td>
+                  <td><input form="uxForm" type="radio" name="o4" value="1"></td>
                   <td><input form="uxForm" type="radio" name="o4" value="2"></td>
                   <td><input form="uxForm" type="radio" name="o4" value="3"></td>
-                  <td><input form="uxForm" type="radio" name="o4" value="4"></td>
+                  <td><input form="uxForm" type="radio" name="o4" value="4" required></td>
                   <td><input form="uxForm" type="radio" name="o4" value="5"></td>
                   <td><input form="uxForm" type="radio" name="o4" value="6"></td>
                   <td><input form="uxForm" type="radio" name="o4" value="7"></td>
@@ -351,10 +353,10 @@
                 </tr>
                 <tr>
                   <td><label class="label-left">unlogisch</label></td>
-                  <td><input form="uxForm" type="radio" name="b2" value="1" required></td>
+                  <td><input form="uxForm" type="radio" name="b2" value="1"></td>
                   <td><input form="uxForm" type="radio" name="b2" value="2"></td>
                   <td><input form="uxForm" type="radio" name="b2" value="3"></td>
-                  <td><input form="uxForm" type="radio" name="b2" value="4"></td>
+                  <td><input form="uxForm" type="radio" name="b2" value="4" required></td>
                   <td><input form="uxForm" type="radio" name="b2" value="5"></td>
                   <td><input form="uxForm" type="radio" name="b2" value="6"></td>
                   <td><input form="uxForm" type="radio" name="b2" value="7"></td>
@@ -373,10 +375,10 @@
                 </tr>
                 <tr>
                   <td><label class="label-left">nicht schlüssig</label></td>
-                  <td><input form="uxForm" type="radio" name="b4" value="1" required></td>
+                  <td><input form="uxForm" type="radio" name="b4" value="1"></td>
                   <td><input form="uxForm" type="radio" name="b4" value="2"></td>
                   <td><input form="uxForm" type="radio" name="b4" value="3"></td>
-                  <td><input form="uxForm" type="radio" name="b4" value="4"></td>
+                  <td><input form="uxForm" type="radio" name="b4" value="4" required></td>
                   <td><input form="uxForm" type="radio" name="b4" value="5"></td>
                   <td><input form="uxForm" type="radio" name="b4" value="6"></td>
                   <td><input form="uxForm" type="radio" name="b4" value="7"></td>
@@ -419,10 +421,10 @@
                 </tr>
                 <tr>
                   <td><label class="label-left">uninteressant</label></td>
-                  <td><input form="uxForm" type="radio" name="iq2" value="1" required></td>
+                  <td><input form="uxForm" type="radio" name="iq2" value="1"></td>
                   <td><input form="uxForm" type="radio" name="iq2" value="2"></td>
                   <td><input form="uxForm" type="radio" name="iq2" value="3"></td>
-                  <td><input form="uxForm" type="radio" name="iq2" value="4"></td>
+                  <td><input form="uxForm" type="radio" name="iq2" value="4" required></td>
                   <td><input form="uxForm" type="radio" name="iq2" value="5"></td>
                   <td><input form="uxForm" type="radio" name="iq2" value="6"></td>
                   <td><input form="uxForm" type="radio" name="iq2" value="7"></td>
@@ -441,10 +443,10 @@
                 </tr>
                 <tr>
                   <td><label class="label-left">unverständlich</label></td>
-                  <td><input form="uxForm" type="radio" name="iq4" value="1" required></td>
+                  <td><input form="uxForm" type="radio" name="iq4" value="1"></td>
                   <td><input form="uxForm" type="radio" name="iq4" value="2"></td>
                   <td><input form="uxForm" type="radio" name="iq4" value="3"></td>
-                  <td><input form="uxForm" type="radio" name="iq4" value="4"></td>
+                  <td><input form="uxForm" type="radio" name="iq4" value="4" required></td>
                   <td><input form="uxForm" type="radio" name="iq4" value="5"></td>
                   <td><input form="uxForm" type="radio" name="iq4" value="6"></td>
                   <td><input form="uxForm" type="radio" name="iq4" value="7"></td>
@@ -471,7 +473,8 @@
           </div>
 
           <div class="personal-data" style="margin-top: 1rem;">
-            <h3>Infos zu deiner Person</h3>
+            <!-- <h3>Infos zu deiner Person</h3> -->
+            <h3>Teil 3 von 3</h3>
             <span>Für eine bessere Auswertung der Studie benötige ich noch ein paar Angaben von dir:</span>
 
             <fieldset>
