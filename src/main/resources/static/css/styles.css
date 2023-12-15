@@ -32,11 +32,11 @@ p, label, span {
 }
 
 
-
 .a-link {
     color: blue;
     text-decoration: underline;
 }
+
 /* unvisited link */
 .a-link:link {
     color: blue;
@@ -58,7 +58,6 @@ p, label, span {
 }
 
 
-
 /* The Modal (background) */
 .modal {
     display: none; /* Hidden by default */
@@ -69,8 +68,8 @@ p, label, span {
     width: 100%; /* Full width */
     height: 100%; /* Full height */
     overflow: auto; /* Enable scroll if needed */
-    background-color: rgb(0,0,0); /* Fallback color */
-    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+    background-color: rgb(0, 0, 0); /* Fallback color */
+    background-color: rgba(0, 0, 0, 0.4); /* Black w/ opacity */
 
 }
 
@@ -106,7 +105,9 @@ p, label, span {
 }
 
 /* Modal Body */
-.modal-body {padding: 2px 16px;}
+.modal-body {
+    padding: 2px 16px;
+}
 
 /* Modal Footer */
 .modal-footer {
@@ -123,15 +124,21 @@ p, label, span {
     padding: 0;
     border: 1px solid #888;
     width: 80%;
-    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     animation-name: animatetop;
     animation-duration: 0.4s
 }
 
 /* Add Animation */
 @keyframes animatetop {
-    from {top: -300px; opacity: 0}
-    to {top: 0; opacity: 1}
+    from {
+        top: -300px;
+        opacity: 0
+    }
+    to {
+        top: 0;
+        opacity: 1
+    }
 }
 
 /* Likert Skala */
@@ -141,6 +148,13 @@ p, label, span {
     margin-bottom: 5px;
     font-weight: bold;
     font-size: large
+}
+.feedback {
+    display: block;
+    text-align: center;
+    margin-bottom: 5px;
+    font-weight: normal;
+    font-size: medium
 }
 
 legend {
@@ -190,9 +204,6 @@ input[type="radio"] {
     padding: 0.6rem;
     border-radius: 1rem;
 }
-
-
-
 
 
 /* Position the image container (needed to position the left and right arrows) */
@@ -278,4 +289,97 @@ input[type="radio"] {
     opacity: 1;
 }
 
-/* traditional test page - Styles for the navigation menu */
+
+/* slider instade of likert scale */
+.slidecontainer {
+    width: 100%; /* Width of the outside container */
+}
+
+/* The slider itself */
+.slider {
+    -webkit-appearance: none;  /* Override default CSS styles */
+    appearance: none;
+    width: 100%; /* Full-width */
+    height: 25px; /* Specified height */
+    background: #d3d3d3; /* Grey background */
+    outline: none; /* Remove outline */
+    opacity: 0.7; /* Set transparency (for mouse-over effects on hover) */
+    -webkit-transition: .2s; /* 0.2 seconds transition on hover */
+    transition: opacity .2s;
+}
+
+/* Mouse-over effects */
+.slider:hover {
+    opacity: 1; /* Fully shown on mouse-over */
+}
+
+/* The slider handle (use -webkit- (Chrome, Opera, Safari, Edge) and -moz- (Firefox) to override default look) */
+.slider::-webkit-slider-thumb {
+    -webkit-appearance: none; /* Override default look */
+    appearance: none;
+    width: 25px; /* Set a specific slider handle width */
+    height: 25px; /* Slider handle height */
+    background: #04AA6D; /* Green background */
+    cursor: pointer; /* Cursor on hover */
+}
+
+.slider::-moz-range-thumb {
+    width: 25px; /* Set a specific slider handle width */
+    height: 25px; /* Slider handle height */
+    background: #04AA6D; /* Green background */
+    cursor: pointer; /* Cursor on hover */
+}
+
+/* Für Tablets */
+@media (max-width: 768px) {
+    .modal-content {
+        width: 95%;
+        margin: 5% auto;
+    }
+}
+
+/* Für Smartphones */
+@media (max-width: 480px) {
+    .container-fluid {
+        padding: 0;
+    }
+    .card {
+        padding: 0;
+        margin: 0;
+        border: 0;
+    }
+
+    .card-title {
+        font-size: 1.5em;
+    }
+
+    .card-text {
+        font-size: 0.9em;
+    }
+    input[type="radio"] {
+        -ms-transform: scale(1); /* IE 9 */
+        -webkit-transform: scale(1); /* Chrome, Safari, Opera */
+        transform: scale(1); /* Vergrößert die Radio-Buttons */
+        margin: 0; /* Entfernt den Standardabstand */
+    }
+
+    .feedback {
+        font-weight: normal;
+        font-size: medium;
+    }
+
+    .likert-table .label-left {
+        font-size: 0.9em;
+        font-weight: normal;
+    }
+
+    .likert-table .label-right {
+        font-size: 0.9em;
+        font-weight: normal;
+    }
+
+    .likert-table .label-center {
+        font-size: 0.9em;
+        font-weight: normal;
+    }
+}
