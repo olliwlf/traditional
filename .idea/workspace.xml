@@ -5,176 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="faa9dc7f-cc2e-43ef-b4a8-3f0de8c95e37" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/css/scrollytelling.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/fonts/BPdots-webfont.eot" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/fonts/BPdots-webfont.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/fonts/BPdots-webfont.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/fonts/BPdots-webfont.woff" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/fonts/BPdots-webfontX.eot" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/icon/favicon.ico" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/img/alien.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/img/armchair.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/img/arrow-down.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/img/back-to-top-icon.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/img/bath-top.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/img/bath.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/img/bathroom-chair.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/img/bathroom-light.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/img/bathroom-mat.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/img/bathroom-mirror-text.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/img/bathroom-mirror.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/img/bathroom-shelf.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/img/bathroom-sink.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/img/bathroom-tile.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/img/bathroom-window.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/img/bed-sheet.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/img/bed.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/img/bin.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/img/chalk-notes.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/img/chalkboard.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/img/clock-face.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/img/clock-hand.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/img/coffee-table.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/img/desk.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/img/every-last-drop.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/img/juan-awake.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/img/juan-bubbles.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/img/juan-clothes.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/img/juan-nekked.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/img/juan-nomnom.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/img/juan-spacesuit.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/img/juan-sponge.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/img/juan.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/img/kitchen-counters.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/img/kitchen-rug.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/img/kitchen-shelf.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/img/knife-rack.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/img/lamp.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/img/loader.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/img/moon.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/img/nice-and-serious.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/img/picture-frame-icons.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/img/picture-frame.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/img/planet-earth.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/img/planet-mercury.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/img/planet-venus.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/img/play-button-down.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/img/play-button.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/img/remote-control.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/img/ribbon-left.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/img/ribbon-right.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/img/road.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/img/roadworks-scroll.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/img/roadworks-sign.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/img/roadworks.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/img/rug.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/img/saturn.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/img/scroll-arrow.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/img/shower-curtain.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/img/side-table.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/img/space-stars.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/img/spaceship/spaceship-1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/img/spaceship/spaceship-10.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/img/spaceship/spaceship-11.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/img/spaceship/spaceship-12.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/img/spaceship/spaceship-13.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/img/spaceship/spaceship-14.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/img/spaceship/spaceship-15.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/img/spaceship/spaceship-16.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/img/spaceship/spaceship-17.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/img/spaceship/spaceship-18.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/img/spaceship/spaceship-19.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/img/spaceship/spaceship-2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/img/spaceship/spaceship-20.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/img/spaceship/spaceship-21.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/img/spaceship/spaceship-22.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/img/spaceship/spaceship-23.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/img/spaceship/spaceship-24.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/img/spaceship/spaceship-25.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/img/spaceship/spaceship-26.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/img/spaceship/spaceship-27.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/img/spaceship/spaceship-28.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/img/spaceship/spaceship-29.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/img/spaceship/spaceship-3.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/img/spaceship/spaceship-30.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/img/spaceship/spaceship-31.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/img/spaceship/spaceship-32.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/img/spaceship/spaceship-33.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/img/spaceship/spaceship-34.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/img/spaceship/spaceship-35.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/img/spaceship/spaceship-36.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/img/spaceship/spaceship-37.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/img/spaceship/spaceship-38.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/img/spaceship/spaceship-39.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/img/spaceship/spaceship-4.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/img/spaceship/spaceship-40.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/img/spaceship/spaceship-41.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/img/spaceship/spaceship-42.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/img/spaceship/spaceship-43.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/img/spaceship/spaceship-44.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/img/spaceship/spaceship-45.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/img/spaceship/spaceship-46.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/img/spaceship/spaceship-47.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/img/spaceship/spaceship-48.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/img/spaceship/spaceship-49.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/img/spaceship/spaceship-5.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/img/spaceship/spaceship-50.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/img/spaceship/spaceship-51.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/img/spaceship/spaceship-52.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/img/spaceship/spaceship-53.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/img/spaceship/spaceship-54.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/img/spaceship/spaceship-55.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/img/spaceship/spaceship-56.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/img/spaceship/spaceship-57.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/img/spaceship/spaceship-58.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/img/spaceship/spaceship-59.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/img/spaceship/spaceship-6.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/img/spaceship/spaceship-60.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/img/spaceship/spaceship-61.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/img/spaceship/spaceship-62.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/img/spaceship/spaceship-63.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/img/spaceship/spaceship-64.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/img/spaceship/spaceship-7.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/img/spaceship/spaceship-8.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/img/spaceship/spaceship-9.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/img/stars-blurred.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/img/stars.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/img/stop-button-down.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/img/stop-button.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/img/sun.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/img/table.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/img/traffic-green.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/img/traffic-lights.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/img/traffic-orange.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/img/traffic-red.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/img/tree-small.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/img/tree.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/img/tv.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/img/wardrobe-rail.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/img/wardrobe-rug.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/img/wardrobe.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/img/waterwise-logo.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/js/froogaloop.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/js/skrollr.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/ribbons/awwwards_sotd_white_left.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/ribbons/awwwards_sotd_white_left2x.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/ribbons/css-design-awards-winner-left-black.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/ribbons/css-winner-white-left.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/ribbons/cssa-dark-sotd.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/test.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/a9edfd10-0806-4026-851c-b7cf28e9b963.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/a9edfd10-0806-4026-851c-b7cf28e9b963.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/js/skrollr.mobile.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/js/vimeo-player.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/springboot/Application.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/springboot/Application.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static.js/imageSlider.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/js/imageSlider.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/css/styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/css/styles.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/endPage.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/endPage.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/startPageS.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/startPageS.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/startPageT.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/startPageT.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/survey.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/survey.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/templates/testPageS.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/testPageS.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/testPageT.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/testPageT.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -374,7 +208,10 @@
       <workItem from="1699959182409" duration="57078000" />
       <workItem from="1700943113352" duration="53432000" />
       <workItem from="1702077474604" duration="12740000" />
-      <workItem from="1702655987658" duration="546000" />
+      <workItem from="1702655987658" duration="4290000" />
+      <workItem from="1702663062974" duration="4493000" />
+      <workItem from="1702723625525" duration="1164000" />
+      <workItem from="1702724892417" duration="609000" />
     </task>
     <servers />
   </component>
