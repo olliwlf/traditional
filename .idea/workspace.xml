@@ -5,10 +5,20 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="faa9dc7f-cc2e-43ef-b4a8-3f0de8c95e37" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/js/skrollr.mobile.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/js/vimeo-player.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/jsLibraryMappings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/js/skrollr6.min.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/css/scrollytelling.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/css/scrollytelling.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/css/styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/css/styles.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/dataUsage.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/dataUsage.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/endPage.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/endPage.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/personalInfos.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/personalInfos.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/startPageS.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/startPageS.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/startPageT.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/startPageT.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/survey.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/survey.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/templates/testPageS.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/testPageS.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/testPageT.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/testPageT.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

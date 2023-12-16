@@ -4,10 +4,14 @@ body {
 }
 
 .my-row {
-    padding-bottom: 1rem;
+    /*padding-bottom: 1rem;*/
     margin: 0.5rem;
     border-width: 0.1rem;
-    border-radius: 1rem;
+    /*border-radius: 1rem;*/
+}
+
+.story-text {
+    padding: 0.625rem;
 }
 
 p, label, span {
