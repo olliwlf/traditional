@@ -3,29 +3,17 @@ package com.example.springboot.controllers;
 import com.example.springboot.entities.Education;
 import com.example.springboot.entities.EducationDirection;
 import com.example.springboot.entities.Person;
-import com.example.springboot.repositories.IEducationDirectionRepository;
-import com.example.springboot.repositories.IEducationRepository;
-import com.example.springboot.repositories.IPersonRepository;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.ui.Model;
 
+import java.util.ArrayList;
 import java.util.List;
-import java.util.Optional;
 
 @Controller
 @RequestMapping("/t")
 public class TradController {
-	@Autowired
-	private IEducationRepository educationRepository;
-
-	@Autowired
-	private IEducationDirectionRepository educationDirectionRepository;
-
-	@Autowired
-	private IPersonRepository personRepository;
 
 	@Value("${spring.application.name}")
 	String appName;
@@ -45,10 +33,34 @@ public class TradController {
 
 	@RequestMapping(value = "/survey", method = RequestMethod.GET)
 	public String showSurvey(Model model) {
-		List<Education> educations = educationRepository.findAll();
+		List<Education> educations = new ArrayList<>();
+		var e0 = new Education();
+		e0.setTitle("Schule");
+		educations.add(e0);
+		var e1 = new Education();
+		e1.setTitle("Ausbildung");
+		educations.add(e1);
+		var e2 = new Education();
+		e2.setTitle("Bachelor");
+		educations.add(e2);
+		var e3 = new Education();
+		e3.setTitle("Master");
+		educations.add(e3);
 		model.addAttribute("educations", educations);
 
-		List<EducationDirection> educationDirections = educationDirectionRepository.findAll();
+		List<EducationDirection> educationDirections = new ArrayList<>();
+		var ed0 = new EducationDirection();
+		ed0.setTitle("Technik");
+		educationDirections.add(ed0);
+		var ed1 = new EducationDirection();
+		ed1.setTitle("Wirtschaft");
+		educationDirections.add(ed1);
+		var ed2 = new EducationDirection();
+		ed2.setTitle("Verwaltung");
+		educationDirections.add(ed2);
+		var ed3 = new EducationDirection();
+		ed3.setTitle("Kunst");
+		educationDirections.add(ed3);
 		model.addAttribute("educationDirections", educationDirections);
 
 		Person currentPerson = new Person();

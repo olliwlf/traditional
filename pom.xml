@@ -77,10 +77,10 @@
 
 
 		<!-- java persistence api for jpa repositories -->
-		<dependency>
+		<!--<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-data-jpa</artifactId>
-		</dependency>
+		</dependency>-->
 
 		<!-- _____________ use for local mysql database in mysql workbench -->
 		<!-- https://mvnrepository.com/artifact/mysql/mysql-connector-java -->
@@ -92,7 +92,7 @@
 		<!-- _____________ use for local mysql database in mysql workbench -->
 
 		<!-- _____________ use this dependency for remote azure sql database in azure data studio -->
-		<dependency>
+		<!--<dependency>
 			<groupId>com.azure.spring</groupId>
 			<artifactId>spring-cloud-azure-starter</artifactId>
 		</dependency>
@@ -100,9 +100,9 @@
 			<groupId>com.microsoft.sqlserver</groupId>
 			<artifactId>mssql-jdbc</artifactId>
 			<scope>runtime</scope>
-		</dependency>
+		</dependency>-->
 	</dependencies>
-	<dependencyManagement>
+	<!--<dependencyManagement>
 		<dependencies>
 			<dependency>
 				<groupId>com.azure.spring</groupId>
@@ -112,7 +112,7 @@
 				<scope>import</scope>
 			</dependency>
 		</dependencies>
-	</dependencyManagement>
+	</dependencyManagement>-->
 	<!-- _____________ use this dependency for remote azure sql database in azure data studio -->
 
 	<build>

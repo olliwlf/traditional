@@ -394,7 +394,7 @@ nav ul li {
     padding: 0.5rem;
     margin-top: 0.313rem;
     border-radius: 1rem;
-    background: #4a4a4a url(../img/arrow-down.png) 0.5rem 0.563rem no-repeat;
+    background: #4a4a4a url("../img/arrow-down.png") 0.5rem 0.563rem no-repeat;
     color: #FFFFFF;
     cursor: pointer
 }
@@ -1491,8 +1491,588 @@ img.small-tree {
     }
 }
 
+@media only screen and (max-width: 1000px) {
+// Ihr Code für schmalere Smartphones, wie z.B. das Iphone
+
 #skrollr-body {
     float: left;
     width: 100%;
     height: 100%;
+}
+
+    /** scene 1: bed */
+    .title img {
+        height: 50%;
+    }
+
+    img.rug {
+        height: 60%;
+    }
+
+    .ribbon-message {
+        font-size: 0.89rem;
+        padding: 0;
+        vertical-align: center;
+    }
+
+    .scroll-message {
+        font-size: 0.89rem;
+    }
+
+    .sky {
+        height: 15%;
+    }
+
+    .character-container-inner, .sky-inner, .floor-inner, .floor-inner-below, .wall-inner, .kitchen-wall-inner, .road, .car-container, .space-container, .living-room-container {
+        width: 100%;
+        height: 100%;
+    }
+
+    img {
+        max-width: 100%;
+        height: auto;
+    }
+
+}
+@media only screen and (max-width: 800px) {
+
+
+    .ribbon-message {
+        font-size: 0.8rem;
+        padding: 0;
+        vertical-align: center;
+    }
+
+    .scroll-message {
+        font-size: 0.8rem;
+    }
+}
+@media only screen and (max-width: 600px) {
+
+
+    .ribbon-message {
+        font-size: 0.71rem;
+        padding: 0;
+        vertical-align: center;
+    }
+
+    .scroll-message {
+        font-size: 0.71rem;
+    }
+}
+@media only screen and (max-width: 410px) {
+
+
+    .ribbon-message {
+        font-size: 0.64rem;
+        padding: 0;
+        vertical-align: center;
+    }
+
+    .scroll-message {
+        font-size: 0.64rem;
+    }
+}
+@media only screen and (max-width: 999px) {
+    .loading-container {
+        width: 12.313rem;
+        height: 10.625rem;
+        background: transparent url("../img/every-last-drop.png") no-repeat 0 0;
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        margin-left: -6.125rem;
+        margin-top: -5.313rem
+    }
+
+    img.loading-gif {
+        position: absolute;
+        top: 8.813rem;
+        left: 6.5rem;
+    }
+
+    nav {
+        position: fixed;
+        z-index: 9999;
+        margin: 0 1.875rem 0 0;
+        padding: 0;
+        right: 0;
+        bottom: 1.25rem;
+        text-align: center;
+        font-size: 0.813rem
+    }
+
+    nav ul li {
+        text-indent: -624.938rem;
+        width: 1rem;
+        height: 1rem;
+        padding: 0.5rem;
+        margin-top: 0.313rem;
+        border-radius: 1rem;
+        background: #4a4a4a url("../img/arrow-down.png") 0.5rem 0.563rem no-repeat;
+        color: #FFFFFF;
+        cursor: pointer
+    }
+
+    nav ul li.inactive {
+        display: none
+    }
+
+    nav ul li:hover {
+        background-color: #666666
+    }
+
+    nav ul li:active {
+        background-color: #2b2b2b
+    }
+
+    .container {
+        width: 100%;
+        height: 100%;
+        position: fixed;
+        background: #354250;
+        display: none
+    }
+
+    .scene {
+        position: fixed;
+        width: 100%;
+        height: 100%
+    }
+
+    .character-container {
+        width: 100%;
+        height: 100%;
+        top: 0
+    }
+
+    .character-container-inner {
+        width: 100%;
+        height: 94%;
+        min-height: 25rem;
+        margin: 0 auto;
+        padding: 3% 0;
+        position: relative
+    }
+
+    img.juan {
+        top: 22.5rem;
+        left: 30rem;
+        max-width: 7.875rem;
+        max-height: 19.688rem;
+        height: 80%
+    }
+
+    img.juan-shower {
+        top: 16.25rem;
+        left: 37.5rem
+    }
+
+    img.juan-clothes {
+        top: 16.313rem;
+        left: 37.5rem
+    }
+
+    img.juan-nomnom {
+        left: 6.563rem;
+        top: 16.875rem;
+    }
+
+    img.bed-sheet, img.bed-frame {
+        max-width: 23.063rem;
+        max-height: 32.813rem;
+        min-width: 20rem;
+        min-height: 28.438rem;
+        height: 80%;
+        top: 18.125rem;
+        left: 44%
+    }
+
+    img.table {
+        top: 31.25rem
+    }
+
+    .sky {
+        height: 12.5rem;
+        background: #8cc9dc
+    }
+
+    .sky-inner {
+        width: 100%;
+        height: 100%;
+        margin: 0 auto;
+        position: relative;
+        min-height: 12.5rem;
+        overflow: hidden
+    }
+
+    .title {
+        height: 100%;
+        min-height: 12.5rem
+    }
+
+    .title img {
+        height: 80%
+    }
+
+    img.logo {
+        margin-top: 1.25rem;
+        max-width: 12.313rem;
+        max-height: 10.625rem
+    }
+
+    img.stars {
+        max-width: 38.688rem;
+        max-height: 11.813rem;
+        margin: 0 4%;
+        left: 22%
+    }
+
+    img.moon {
+        margin-top: 1.25rem;
+        max-width: 5.938rem;
+        max-height: 7.5rem;
+        right: 0
+    }
+
+    .scroll-message {
+        position: absolute;
+        left: 10rem;
+        color: #FFFFFF;
+        top: 1.438rem
+    }
+
+    .scroll-message:after {
+        content: url("../img/scroll-arrow.png");
+        position: relative;
+        top: 4.688rem;
+        left: 0.625rem;
+        opacity: 0.8
+    }
+
+    .ribbon-message {
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        -ms-box-sizing: border-box;
+        box-sizing: border-box;
+        background: #f1f1ea;
+        width: 40%;
+        position: absolute;
+        left: 32%;
+        top: 50%;
+        margin-top: -4.188rem;
+        padding: 0.875rem;
+        height: 8.563rem;
+        text-align: center;
+        font-size: 0.938rem
+    }
+
+    .road-message {
+        width: 18.75rem;
+        top: 11.25rem;
+        left: 59%;
+        padding-top: 1.375rem;
+        font-size: 1.125rem;
+        line-height: 1.875rem
+    }
+
+    .ribbon-message:before {
+        content: url("../img/ribbon-left.png");
+        width: 1.688rem;
+        height: 8.563rem;
+        position: absolute;
+        left: -1.688rem;
+        top: 0
+    }
+
+    .ribbon-message:after {
+        content: url("../img/ribbon-right.png");
+        width: 1.75rem;
+        height: 8.563rem;
+        position: absolute;
+        right: -1.688rem;
+        top: 0
+    }
+
+    img.sun {
+        max-width: 10.188rem;
+        max-height: 10.188rem;
+        right: 0
+    }
+
+    .bedroom-floor {
+        height: 100%;
+        background: #d49e99
+    }
+
+    .floor-inner {
+        width: 100%;
+        height: 94%;
+        min-height: 25rem;
+        margin: 0 auto;
+        padding: 3% 0;
+        position: relative
+    }
+
+    .floor-inner-below {
+        width: 100%;
+        height: 35%;
+        min-height: 12.5rem;
+        margin: 0 auto;
+        padding: 0;
+        position: relative;
+        top: -35%
+    }
+
+    img.desk {
+        max-width: 24.313rem;
+        max-height: 23.875rem;
+        height: 60%;
+        top: 12%;
+        z-index: 2
+    }
+
+    img.side-table {
+        max-width: 7.875rem;
+        max-height: 18.75rem;
+        height: 40%;
+        top: 10%;
+        right: 0
+    }
+
+    img.rug {
+        max-width: 23.438rem;
+        max-height: 10rem;
+        height: 70%;
+        top: 20%;
+        z-index: 1
+    }
+
+    img.tree {
+        max-width: 5.688rem;
+        max-height: 13rem;
+        height: 70%;
+        right: 0;
+        top: -20%
+    }
+
+    .bathroom-wall {
+        height: 36%;
+        background: #5e9193;
+        min-height: 18.75rem;
+    }
+
+    .wall-inner {
+        width: 100%;
+        height: 100%;
+        margin: 0 auto;
+        position: relative;
+        min-height: 18.75rem
+    }
+
+    img.mirror, img.mirror-text {
+        top: 10%;
+        max-width: 21.875rem;
+        max-height: 13.938rem;
+        height: 70%;
+        min-height: 12.5rem
+    }
+
+    img.shelf {
+        left: 50%;
+        top: 50%
+    }
+
+    img.bathroom-light {
+        left: 47%;
+        z-index: 200
+    }
+
+    img.window {
+        top: 20%;
+        left: 70%
+    }
+
+    img.clock-face, img.clock-hand {
+        right: 0;
+        top: 30%
+    }
+
+    .bathroom-floor {
+        height: 64%;
+        background: transparent url("../img/bathroom-tile.png") 0 0
+    }
+
+    img.bathroom-sink {
+        top: 10%;
+        left: 3%;
+        height: 50%;
+        max-width: 16.875rem;
+        max-height: 21.5rem
+    }
+
+    img.bathroom-mat {
+        top: 25rem;
+        left: 22.5rem;
+        height: 50%;
+        max-width: 25.688rem;
+        max-height: 9.5rem
+    }
+
+    img.bath {
+        left: 36%;
+        top: 8.75rem;
+    }
+
+    img.bathroom-chair {
+        right: 3%;
+        max-width: 6.5rem;
+        max-height: 16.188rem;
+        height: 50%;
+        top: 14%
+    }
+
+    .shower-curtain {
+        position: absolute;
+        left: 35%;
+        top: 10.625rem;
+        background: transparent url("../img/shower-curtain.png") no-repeat 0 0;
+        width: 28.188rem;
+        height: 23rem
+    }
+
+    .wardrobe-wall {
+        height: 36%;
+        background: #74525f;
+        min-height: 18.75rem
+    }
+
+    img.wardrobe, img.wardrobe-rail {
+        top: 20%
+    }
+
+    img.picture-frame, img.picture-frame-icons {
+        right: 15%;
+        top: 21%
+    }
+
+    .wardrobe-floor {
+        height: 64%;
+        background: #c1e2ec
+    }
+
+    img.lamp {
+        max-width: 9.688rem;
+        max-height: 18.563rem;
+        height: 100%;
+        right: 0;
+        margin-top: 20%
+    }
+
+    img.wardrobe-rug {
+        max-width: 23.125rem;
+        max-height: 100%;
+        min-height: 6.25rem;
+        top: 50%;
+        left: 30%
+    }
+
+    .kitchen-wall {
+        height: 36%;
+        max-height: 21.688rem;
+        background: #5e9193;
+        min-height: 18.75rem
+    }
+
+    .kitchen-wall-inner {
+        width: 100%;
+        height: 100%;
+        margin: 0 auto;
+        position: relative;
+        min-height: 18.75rem;
+        max-height: 21.688rem;
+    }
+
+    img.kitchen-counters {
+        max-height: 25.125rem;
+        max-width: 39.438rem;
+        right: 0;
+        height: 120%;
+        top: 20%
+    }
+
+    img.kitchen-shelf {
+        right: 30%;
+        top: 20%
+    }
+
+    img.knife-rack {
+        left: 27%;
+        top: 30%
+    }
+
+    img.chalkboard, img.chalk-notes {
+        top: 15%
+    }
+
+    img.bin {
+        top: 30%;
+        left: 45%
+    }
+
+    img.kitchen-rug {
+        right: 0%;
+        top: 40%
+    }
+
+    .kitchen-floor {
+        height: 75%;
+        background: #d0d5d1
+    }
+
+    .grass {
+        background: #acc666
+    }
+
+    .road {
+        width: 100%;
+        height: 400%;
+        margin: 0 auto;
+        position: relative;
+        background: transparent url("../img/road.png") 0 0
+    }
+
+    .car-container {
+        width: 100%;
+        margin: 0 auto;
+        position: relative;
+        top: 4.375rem;
+        z-index: 100
+    }
+
+    .car-container-inner {
+        width: 15.875rem;
+        height: 27.188rem;
+        position: absolute
+    }
+
+    img.roadworks {
+        right: 6%;
+        top: 75rem;
+    }
+
+    img.roadworks-scroll {
+        right: 9%;
+        top: 131.25rem;
+    }
+
+    img.roadworks-sign, .roadworks-sign-text {
+        right: 9%;
+        top: 131.25rem;
+    }
+
+    img.traffic-lights {
+        right: 29rem;
+        top: 137.5rem;
+    }
 }

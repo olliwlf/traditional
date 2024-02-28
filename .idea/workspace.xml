@@ -5,17 +5,30 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="faa9dc7f-cc2e-43ef-b4a8-3f0de8c95e37" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/jsLibraryMappings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/js/skrollr6.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/css/scrollytelling1.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/testPageT_old.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/a9edfd10-0806-4026-851c-b7cf28e9b963.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/a9edfd10-0806-4026-851c-b7cf28e9b963/storage_v2/_src_/database/studydb.B8z-jw.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/a9edfd10-0806-4026-851c-b7cf28e9b963/storage_v2/_src_/database/studydb.B8z-jw/schema/INFORMATION_SCHEMA.NBgcMw.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/a9edfd10-0806-4026-851c-b7cf28e9b963/storage_v2/_src_/database/studydb.B8z-jw/schema/dbo.sYMBAA.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/a9edfd10-0806-4026-851c-b7cf28e9b963/storage_v2/_src_/database/studydb.B8z-jw/schema/sys.zb4BAA.meta" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-boot-initial.iml" beforeDir="false" afterPath="$PROJECT_DIR$/spring-boot-initial.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/springboot/Application.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/springboot/Application.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/springboot/controllers/ScrolController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/springboot/controllers/ScrolController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/springboot/controllers/SurveyController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/springboot/controllers/SurveyController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/springboot/controllers/TradController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/springboot/controllers/TradController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/springboot/entities/Education.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/springboot/entities/Education.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/springboot/entities/EducationDirection.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/springboot/entities/EducationDirection.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/springboot/entities/Person.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/springboot/entities/Person.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/springboot/repositories/IEducationDirectionRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/springboot/repositories/IEducationRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/springboot/repositories/IPersonRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/static/css/scrollytelling.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/css/scrollytelling.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/css/styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/css/styles.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/dataUsage.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/dataUsage.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/endPage.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/endPage.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/personalInfos.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/personalInfos.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/startPageS.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/startPageS.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/startPageT.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/startPageT.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/templates/survey.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/survey.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/templates/testPageS.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/testPageS.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/templates/testPageT.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/testPageT.html" afterDir="false" />
@@ -48,6 +61,7 @@
         <option value="Class" />
         <option value="Interface" />
         <option value="HTML File" />
+        <option value="CSS File" />
       </list>
     </option>
   </component>
@@ -80,8 +94,9 @@
     &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
     &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
     &quot;android.gradle.sync.needed&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/Users/oliverwolf/Documents/FHWS_MIS/Masterarbeit/Prototypen/Traditional/src/main/resources/static.fonts&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;only-ui__NO-DATABASE&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/Users/oliverwolf/Documents/FHWS_MIS/Masterarbeit/Prototypen/Traditional/src/main/resources/templates&quot;,
+    &quot;list.type.of.created.stylesheet&quot;: &quot;CSS&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
@@ -103,11 +118,11 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/main/resources/templates" />
       <recent name="$PROJECT_DIR$/src/main/resources/static.fonts" />
       <recent name="$PROJECT_DIR$/src/main/resources/static.ribbons" />
       <recent name="$PROJECT_DIR$/src/main/resources/static.js" />
       <recent name="$PROJECT_DIR$/src/main/resources/static.img" />
-      <recent name="$PROJECT_DIR$/src/main/resources/templates" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/src/main/resources/static/css" />
@@ -222,6 +237,16 @@
       <workItem from="1702663062974" duration="4493000" />
       <workItem from="1702723625525" duration="1164000" />
       <workItem from="1702724892417" duration="609000" />
+      <workItem from="1703346443408" duration="356000" />
+      <workItem from="1703416179833" duration="140000" />
+      <workItem from="1703494210892" duration="1933000" />
+      <workItem from="1704233773098" duration="1245000" />
+      <workItem from="1704758314027" duration="696000" />
+      <workItem from="1706462709670" duration="2592000" />
+      <workItem from="1706534934807" duration="1151000" />
+      <workItem from="1709135958321" duration="1536000" />
+      <workItem from="1709150382971" duration="1289000" />
+      <workItem from="1709152226183" duration="665000" />
     </task>
     <servers />
   </component>
